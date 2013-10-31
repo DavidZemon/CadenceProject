@@ -1,0 +1,7 @@
+// Generated for: spectre
+// Generated on: Oct 30 23:47:08 2013
+// Design library name: project
+// Design cell name: 4b_adder_subtractor
+// Design view name: schematic
+simulator lang=spectre
+global 0 vdd!

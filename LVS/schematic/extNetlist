@@ -1,0 +1,18 @@
+t 2 Vin input
+t 3 Vout output
+
+n 1 gnd!
+n 0 vdd!
+n 2 /Vin
+n 3 /Vout
+
+; nmos Instance /P__1 = auLvs device Q0
+d nmos D G S B (p D S)
+i 0 nmos 3 2 1 1 " m 1 l 180e-9 w 450e-9 "
+
+; pmos Instance /P__0 = auLvs device Q1
+d pmos D G S B (p D S)
+i 1 pmos 3 2 0 0 " m 1 l 180e-9 w 450e-9 "
+t 0 vdd! global
+t 1 gnd! global
+

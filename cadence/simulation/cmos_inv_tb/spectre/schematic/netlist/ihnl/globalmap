@@ -1,0 +1,11 @@
+CADENCE IHNL01070
+$model
+0_Tutorial/cmos_inv_tb/schematic cmos_inv_tb
+0_Tutorial/cmos_inv/extracted cmos_inv
+$endmodel
+$net
+vdd! vdd!
+gnd! 0
+$endnet
+$param
+$endparam

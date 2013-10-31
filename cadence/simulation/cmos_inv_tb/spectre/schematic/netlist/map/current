@@ -1,0 +1,28 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "cmos_inv_tb"
+  repList "spectre cmos_sch cmos.sch extracted schematic veriloga"
+  stopList "spectre"
+  globalList "gnd! vdd!"
+  hierDelim "."
+  netlistDir "/tmp/david/cadence/simulation/cmos_inv_tb/spectre/schematic/netlist"
+ )
+( instViewTable
+ )
+( net
+ )
+( inst
+ )
+( model
+( "0_Tutorial/cmos_inv_tb/schematic" "cmos_inv_tb" )
+( "gnd!" "0" )
+( "0_Tutorial/cmos_inv/extracted" "cmos_inv" )
+ )
+( term
+ )
+( param
+ )
+( "cmos_inv" "ihnl/cds0/map" )
+( "cmos_inv_tb" "ihnl/cds1/map" )
+ )

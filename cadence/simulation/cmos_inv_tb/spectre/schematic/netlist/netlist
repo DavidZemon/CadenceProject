@@ -1,0 +1,25 @@
+
+// Library name: 0_Tutorial
+// Cell name: cmos_inv
+// View name: extracted
+subckt cmos_inv Vin Vout
+    \+1 (vdd! Vin Vout vdd!) tsmc18dP w=4.5e-07 l=1.8e-07 as=2.2275e-13 \
+        ad=2.2275e-13 ps=1.44e-06 pd=1.44e-06 m=1 region=sat
+    \+6 (Vin 0) capacitor c=5.65704e-17 m=1
+    \+5 (Vin 0) capacitor c=6.1371e-17 m=1
+    \+4 (vdd! 0) capacitor c=1.26545e-16 m=1
+    \+3 (Vout 0) capacitor c=1.22225e-16 m=1
+    \+2 (Vout vdd!) capacitor c=3.47472e-17 m=1
+    \+0 (0 Vin Vout 0) tsmc18dN w=4.5e-07 l=1.8e-07 as=2.2275e-13 \
+        ad=2.2275e-13 ps=1.44e-06 pd=1.44e-06 m=1 region=sat
+ends cmos_inv
+// End of subcircuit definition.
+
+// Library name: 0_Tutorial
+// Cell name: cmos_inv_tb
+// View name: schematic
+Inv_0 (net4 Vout) cmos_inv
+V0 (vdd! 0) vsource type=dc dc=1.8
+C0 (Vout 0) capacitor c=10f m=1
+V1 (net4 0) vsource type=pulse val0=0 val1=1.8 period=80n delay=0 \
+        rise=100p fall=100p width=40n

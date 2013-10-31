@@ -1,0 +1,153 @@
+(opts DV) "1e+3"
+(opts SEED) "259200"
+(opts RMIN) "1e-9"
+(opts RELVDC) "1e-3"
+(opts ACCT) "Enabled (1)"
+(opts RELMOS) "5e-2"
+(opts ABSV) "5e-5"
+(opts CONVERGE) "Autoconvergance (0)"
+(opts NOPIV) nil
+(opts LENNAM) "8"
+(opts DCAP) "2"
+(opts DLENCSDF) "5"
+(opts ITLPZ) "100"
+(opts MBYPASS) "1"
+(opts GMINDC) "1e-12"
+(opts RELV) "1e-3"
+(opts GRAMP) "0"
+(opts ASPEC) nil
+(opts PIVTOL) "1e-15"
+(opts METHOD) "TRAP"
+(opts LIMPTS) "2001"
+(opts CHGTOL) "1e-15"
+(opts GSHUNT) "0"
+(opts DVTR) "1e+3"
+(opts DI) "0"
+(opts HIER_SCALE) "None ()"
+(opts CSHDC) "1e-12"
+(opts RELI) "1e-2"
+(opts PATHNUM) nil
+(opts DEFW) "1e-4"
+(opts POST_VERSION) "9601"
+(opts DCON) "Auto (0)"
+(opts DEFL) "1e-4"
+(opts DEFNRS) "0"
+(opts NUMDGT) "4"
+(opts ITL5) "0"
+(opts ADDITIONAL_ARGUMENTS) ""
+(opts BADCHR) nil
+(opts BYTOL) "5e-5"
+(opts AUTOSTOP) nil
+(opts LIMTIM) "2.0"
+(opts EXPMAX) "8e+1"
+(opts DVDT) "Balance (3)"
+(opts PUTMEAS) nil
+(opts NOWARN) nil
+(opts MONTECON) nil
+(opts BEEP) "Off (0)"
+(opts MEASSORT) nil
+(opts DCFOR) "0"
+(opts GMIN) "1e-12"
+(opts DCHOLD) "1"
+(opts INGOLD) "SPICE (2)"
+(opts NODE) nil
+(opts DCSTEP) "0"
+(opts ZUKEN) "Off (1)"
+(opts TRTOL) "7"
+(opts VFLOOR) "0"
+(opts FS) "25e-2"
+(opts CO) "Narrow (80)"
+(opts DEFAS) "0"
+(opts RESMIN) "1e-5"
+(opts WARNLIMIT) "1"
+(opts TRCON) "On (1)"
+(opts PSF) "ASCII (2)"
+(opts BRIEF) nil
+(opts ICSWEEP) nil
+(opts PARHIER) "LOCAL"
+(opts GENK) nil
+(opts RISETIME) "0"
+(opts RELQ) "1e-2"
+(opts FFTOUT) nil
+(opts LVLTIM) "DVDT (1)"
+(opts ARTIST) "On (2)"
+(opts NEWTOL) nil
+(opts ABSMOS) "1e-6"
+(opts DIAGNOSTIC) nil
+(opts MODMONTE) nil
+(opts NOELCK) nil
+(opts ABSI) "1e-9"
+(opts BINPRINT) nil
+(opts PIVOT) "Fast, non-pivoting (10)"
+(opts ITLPTRAN) "30"
+(opts PURETP) nil
+(opts ABSH) "0"
+(opts PLIM) "SPICE (1)"
+(opts MENTOR) "Off (0)"
+(opts MEASDGT) "4"
+(opts NOTOP) nil
+(opts MU) ".5"
+(opts DEFPD) "0"
+(opts SLOPETOL) ".5"
+(opts SCALE) "1"
+(opts CSHUNT) "0"
+(opts EPSMIN) "1e-28"
+(opts EXPLI) "0"
+(opts TIMERES) "1e-12"
+(opts SCALM) "1"
+(opts TNOM) "25"
+(opts POSTTOP) "0"
+(opts MODSRH) nil
+(opts KLIM) "1e-2"
+(opts H9007) nil
+(opts UNWRAP) nil
+(opts CVTOL) ".2"
+(opts FAST) nil
+(opts CPTIME) "1e+7"
+(opts IMAX) "8"
+(opts DEFNRD) "0"
+(opts OPTLST) "No Info (0)"
+(opts ABSVDC) "5e-5"
+(opts INTERP) nil
+(opts PROBE) nil
+(opts DCCAP) nil
+(opts DEFAD) "0"
+(opts RELH) "5e-2"
+(opts ALTCHK) "On (1)"
+(opts ACOUT) "Star-Hspice Method (1)"
+(opts FT) "25e-2"
+(opts WL) nil
+(opts LIST) nil
+(opts RELVAR) ".30"
+(opts MAXORD) "Normal (2)"
+(opts DEFPS) "0"
+(opts MEASOUT) "On (1)"
+(opts SPICE) nil
+(opts GMAX) "1e+2"
+(opts RMAX) "2"
+(opts OFF) nil
+(opts BYPASS) "1"
+(opts OPTS) nil
+(opts IMIN) "3"
+(opts KCLTEST) nil
+(opts CDS) "Off (0)"
+(opts CAPTAB) nil
+(opts ITL1) "2e+2"
+(opts ITL2) "5e+1"
+(opts POST) "Binary (1)"
+(opts PIVREL) "1e-20"
+(opts ALT999) nil
+(opts MEASFAIL) nil
+(opts STATFL) "Create .st0 (0)"
+(opts BKPSIZ) "5000"
+(opts ABSVAR) ".5"
+(opts ITRPRT) nil
+(opts TEMPDC) "25"
+(opts ACCURATE) nil
+(opts CSDF) nil
+(opts SEARCH) nil
+(opts MAXAMP) "0"
+(opts NOMOD) nil
+(opts PIVREF) "1e8"
+(opts NOPAGE) nil
+(opts ALT9999) nil

@@ -1,0 +1,5 @@
+
+// Library name: project
+// Cell name: xor
+// View name: schematic
+subckt xor A AxorB B inh_inh_bn

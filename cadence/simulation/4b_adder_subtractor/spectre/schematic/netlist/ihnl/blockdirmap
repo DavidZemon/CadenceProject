@@ -1,0 +1,10 @@
+CADENCE IHNL01078
+
+project xor schematic cds0
+project cmos_inv schematic cds1
+project nor schematic cds2
+project or schematic cds3
+project nand schematic cds4
+project and schematic cds5
+project 1b_fullAdder schematic cds6
+project 4b_adder_subtractor schematic cds7

@@ -1,0 +1,8 @@
+HEADER
+"PSFversion" "1.00"
+"I2n" "cmos_inv"
+"I0n" "nor"
+"Av" ":1v"
+"Bv" ":2v"
+"Fv" ":3v"
+"[@inh_bn:%:gnd!]v" ":4v"

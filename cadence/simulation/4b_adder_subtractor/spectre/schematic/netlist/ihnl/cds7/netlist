@@ -1,0 +1,13 @@
+
+// Library name: project
+// Cell name: 4b_adder_subtractor
+// View name: schematic
+I8 (B\<3\> net66 op 0) xor
+I7 (B\<2\> net69 op 0) xor
+I6 (B\<1\> net72 op 0) xor
+I5 (B\<0\> net75 op 0) xor
+I9 (Ci op net76 0) or
+I3 (A\<3\> net66 net44 Co S\<3\> 0) project_1b_fullAdder_schematic
+I2 (A\<2\> net69 net49 net44 S\<2\> 0) project_1b_fullAdder_schematic
+I4 (A\<1\> net72 net54 net49 S\<1\> 0) project_1b_fullAdder_schematic
+I0 (A\<0\> net75 net76 net54 S\<0\> 0) project_1b_fullAdder_schematic

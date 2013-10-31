@@ -1,0 +1,22 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  repList "spectre cmos_sch cmos.sch schematic veriloga"
+  stopList "spectre"
+  hierDelim "."
+ )
+( net
+ )
+( inst
+ )
+( model
+( "4b_adder_subtractor" "project_4b_adder_subtractor_schematic" )
+( "1b_fullAdder" "project_1b_fullAdder_schematic" )
+( "or" "or" )
+( "xor" "xor" )
+ )
+( term
+ )
+( param
+ )
+ )

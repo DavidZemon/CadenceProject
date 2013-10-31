@@ -1,0 +1,2 @@
+INCLUDE /usr/local/cadence/IC610/share/cdssetup/cds.lib
+DEFINE project ./project

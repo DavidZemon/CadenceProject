@@ -1,0 +1,4 @@
+(envOpts printComments) nil
+(envOpts switchViewList) ("spectre" "cmos_sch" "cmos.sch" "schematic" "veriloga")
+(envOpts autoDisplay) t
+(envOpts stopViewList) ("spectre")

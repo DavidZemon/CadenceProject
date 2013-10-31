@@ -1,0 +1,20 @@
+_outputList = nil
+ _envSaveOptions = nil
+_envSaveOptions = (let
+(tmp1 tmp2)
+tmp1 = (let
+(tmp1 tmp2)
+tmp1 = 'allAnalogTC
+list(tmp1 tmp2)
+)
+tmp2 = (let
+(tmp1 tmp2)
+tmp1 = 'allAnalogNV
+tmp2 = 't
+list(tmp1 tmp2)
+)
+list(tmp1 tmp2)
+)
+savedComponent = list( _outputList _envSaveOptions ) 
+_outputList = 'unbound
+ _envSaveOptions = 'unbound

@@ -1,0 +1,11 @@
+HEADER
+"PSFversion" "1.00"
+"I3n I2n" "and"
+"I4n" "or"
+"I1n I0n" "xor"
+"Av" ":1v"
+"Bv" ":2v"
+"Civ" ":3v"
+"Cov" ":4v"
+"Sv" ":5v"
+"[@inh_bn:%:gnd!]v" ":6v"

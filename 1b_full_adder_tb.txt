@@ -1,0 +1,6 @@
+simulator lang=spectre
+vdd (vdd! 0) vsource dc=3
+a0 (A 0) vsource type=pulse val0=0 val1=3 delay=0 rise=0.5n fall=0.5n width=10u period=20u
+b0 (B 0) vsource type=pulse val0=0 val1=3 delay=0 rise=0.5n fall=0.5n width=20u period=40u
+Cin (Ci 0) vsource type=pulse val0=0 val1=3 delay=0 rise=0.5n fall=0.5n width=40u period=80u
+

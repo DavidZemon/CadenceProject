@@ -1,0 +1,21 @@
+\o Program:		@(#)$CDS: cdsLibEditor.exe version 6.1.3_ISR 11/30/2009 15:23 (cat71lnx) $
+\o Sub version:		sub-version 07.02-s047
+\o Arguments:		-display :0 -mpssession virtuoso8564 -mpshost rc18xece107 -namespace CDBA -cdslib /tmp/kancy/cds.lib 
+\o Working Directory:	rc18xece107:/tmp/kancy
+\a nrSetWindowVisibility(cdsLibEditor "show")
+\o Qt version: 		4.2.3
+\a nrSetCurrentWindow(cdsLibEditor)
+\a nrListItemAction(cdsLibEditor->mainTable 25 0)
+\o Active cell: 25 0 ""
+\a nrResizeWindow(cdsLibEditor list(4 52 500 400))
+\a nrResizeWindow(cdsLibEditor list(879 270 500 400))
+\a nrListItemAction(cdsLibEditor->mainTable 24 1)
+\o Active cell: 24 1 "/tmp/kancy/project"
+\a nrListItemAction(cdsLibEditor->mainTable 24 0)
+\o Active cell: 24 0 "project"
+\a nrListItemAction(cdsLibEditor->mainTable 24 1)
+\o Active cell: 24 1 "/tmp/kancy/project"
+\a nrSetCurrentWindow(cdsLibEditor)
+\a cdsLibEditor->fileExitButton->value = t
+\a nrSetWindowVisibility(cdsLibEditor "hide")
+\a exit(0)

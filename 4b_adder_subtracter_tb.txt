@@ -1,0 +1,31 @@
+simulator lang=spectre
+//
+// Variables
+parameters VCC = 1.8
+parameters STEP = 10u
+parameters T_RF = 0.5n
+//
+//a0 (A\<0\> 0) vsource type=pulse val0=VCC val1=0 delay=0 rise=0.5n fall=0.5n width=STEP period=2*STEP
+//a1 (A\<1\> 0) vsource type=pulse val0=VCC val1=0 delay=0 rise=0.5n fall=0.5n width=2*STEP period=4*STEP
+//a2 (A\<2\> 0) vsource type=pulse val0=VCC val1=0 delay=0 rise=0.5n fall=0.5n width=4*STEP period=8*STEP
+//a3 (A\<3\> 0) vsource type=pulse val0=VCC val1=0 delay=0 rise=0.5n fall=0.5n width=8*STEP period=16*STEP
+//b0 (B\<0\> 0) vsource type=pulse val0=VCC val1=0 delay=0 rise=0.5n fall=0.5n width=16*STEP period=32*STEP
+//b1 (B\<1\> 0) vsource type=pulse val0=VCC val1=0 delay=0 rise=0.5n fall=0.5n width=32*STEP period=64*STEP
+//b2 (B\<2\> 0) vsource type=pulse val0=VCC val1=0 delay=0 rise=0.5n fall=0.5n width=64*STEP period=128*STEP
+//b3 (B\<3\> 0) vsource type=pulse val0=VCC val1=0 delay=0 rise=0.5n fall=0.5n width=128*STEP period=256*STEP
+//Cin (Ci 0) vsource type=pulse val0=VCC val1=0 delay=0 rise=0.5n fall=0.5n width=256*STEP period=512*STEP
+//op (op 0) vsource type=pulse val0=VCC val1=0 delay=0 rise=0.5n fall=0.5n width=512*STEP period=1024*STEP
+//
+// More tests...
+a0  (A\<0\> 0) vsource type=pwl wave=[0 0 (STEP-T_RF) 0 STEP VCC (2*STEP-T_RF) VCC (2*STEP) 0   (3*STEP-T_RF) 0   (3*STEP) 0   (4*STEP-T_RF) 0   (4*STEP) 0   (5*STEP-T_RF) 0   (5*STEP) 0   (6*STEP-T_RF) 0   (6*STEP) VCC]
+a1  (A\<1\> 0) vsource type=pwl wave=[0 0 (STEP-T_RF) 0 STEP VCC (2*STEP-T_RF) VCC (2*STEP) VCC (3*STEP-T_RF) VCC (3*STEP) VCC (4*STEP-T_RF) VCC (4*STEP) 0   (5*STEP-T_RF) 0   (5*STEP) 0   (6*STEP-T_RF) 0   (6*STEP) VCC]
+a2  (A\<2\> 0) vsource type=pwl wave=[0 0 (STEP-T_RF) 0 STEP VCC (2*STEP-T_RF) VCC (2*STEP) 0   (3*STEP-T_RF) 0   (3*STEP) VCC (4*STEP-T_RF) VCC (4*STEP) 0   (5*STEP-T_RF) 0   (5*STEP) 0   (6*STEP-T_RF) 0   (6*STEP) VCC]
+a3  (A\<3\> 0) vsource type=pwl wave=[0 0 (STEP-T_RF) 0 STEP VCC (2*STEP-T_RF) VCC (2*STEP) VCC (3*STEP-T_RF) VCC (3*STEP) 0   (4*STEP-T_RF) 0   (4*STEP) 0   (5*STEP-T_RF) 0   (5*STEP) VCC (6*STEP-T_RF) VCC (6*STEP) VCC]
+//
+b0  (B\<0\> 0) vsource type=pwl wave=[0 0 (STEP-T_RF) 0 STEP 0   (2*STEP-T_RF) 0   (2*STEP) VCC (3*STEP-T_RF) VCC (3*STEP) VCC (4*STEP-T_RF) VCC (4*STEP) 0   (5*STEP-T_RF) 0   (5*STEP) VCC (6*STEP-T_RF) VCC (6*STEP) 0]
+b1  (B\<1\> 0) vsource type=pwl wave=[0 0 (STEP-T_RF) 0 STEP 0   (2*STEP-T_RF) 0   (2*STEP) 0   (3*STEP-T_RF) 0   (3*STEP) VCC (4*STEP-T_RF) VCC (4*STEP) 0   (5*STEP-T_RF) 0   (5*STEP) 0   (6*STEP-T_RF) 0   (6*STEP) VCC]
+b2  (B\<2\> 0) vsource type=pwl wave=[0 0 (STEP-T_RF) 0 STEP 0   (2*STEP-T_RF) 0   (2*STEP) VCC (3*STEP-T_RF) VCC (3*STEP) 0   (4*STEP-T_RF) 0   (4*STEP) 0   (5*STEP-T_RF) 0   (5*STEP) 0   (6*STEP-T_RF) 0   (6*STEP) VCC]
+b3  (B\<3\> 0) vsource type=pwl wave=[0 0 (STEP-T_RF) 0 STEP 0   (2*STEP-T_RF) 0   (2*STEP) 0   (3*STEP-T_RF) 0   (3*STEP) 0   (4*STEP-T_RF) 0   (4*STEP) 0   (5*STEP-T_RF) 0   (5*STEP) 0   (6*STEP-T_RF) 0   (6*STEP) VCC]
+cin (Ci 0)     vsource type=pwl wave=[0 0 (STEP-T_RF) 0 STEP VCC (2*STEP-T_RF) VCC (2*STEP) VCC (3*STEP-T_RF) VCC (3*STEP) 0   (4*STEP-T_RF) 0   (4*STEP) 0   (5*STEP-T_RF) 0   (5*STEP) 0   (6*STEP-T_RF) 0   (6*STEP) VCC]
+op  (op 0)     vsource type=pwl wave=[0 0 (STEP-T_RF) 0 STEP 0   (2*STEP-T_RF) 0   (2*STEP) 0   (3*STEP-T_RF) 0   (3*STEP) 0   (4*STEP-T_RF) 0   (4*STEP) VCC (5*STEP-T_RF) VCC (5*STEP) VCC (6*STEP-T_RF) VCC (6*STEP) VCC]
+

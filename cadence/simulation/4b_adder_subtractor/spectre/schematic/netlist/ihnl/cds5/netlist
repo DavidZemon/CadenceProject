@@ -1,0 +1,4 @@
+    I2 (A B net8 inh_inh_bn) nand
+    I3 (net8 F inh_inh_bn) cmos_inv
+ends and
+// End of subcircuit definition.

@@ -1,0 +1,2 @@
+DEFINE project ./project
+ASSIGN project libMode shared

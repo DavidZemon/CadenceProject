@@ -1,0 +1,5 @@
+
+// Library name: project
+// Cell name: cmos_inv
+// View name: schematic
+subckt cmos_inv Vin Vout inh_inh_bn

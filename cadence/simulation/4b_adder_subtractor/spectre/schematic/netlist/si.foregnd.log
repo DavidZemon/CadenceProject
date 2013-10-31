@@ -1,0 +1,112 @@
+Begin Incremental Netlisting Oct 30 23:47:08 2013
+WARNING (OSSHNL-274): For 'hnlMapParamFirstChar', in the last netlisting session
+in this run directory, the character 
+'A' was mapped to 'a'. In the current
+netlisting session, no mapping rule is 
+given for this character 'A'. Netlist(s)
+from last session cannot be used for 
+incremental netlisting. Therefore
+re-netlisting the design.
+ 
+End netlisting Oct 30 23:47:08 2013
+ERROR (OSSGLD-18): The command character after '[' in the NLP expression '[0 0
+10m 3]
+' is not a valid 
+character. The command character is the first character
+after '[' in the NLP 
+expression. It must be '?', '!', '#', '$', 'n', '@', '.',
+'~' or '+'. Enter a 
+valid character as the command character.
+ 
+
+ERROR (OSSGLD-18): The command character after '[' in the NLP expression '[0 0
+10m 3]
+' is not a valid 
+character. The command character is the first character
+after '[' in the NLP 
+expression. It must be '?', '!', '#', '$', 'n', '@', '.',
+'~' or '+'. Enter a 
+valid character as the command character.
+ 
+
+ERROR (OSSGLD-18): The command character after '[' in the NLP expression '[0 0
+10m 3]
+' is not a valid 
+character. The command character is the first character
+after '[' in the NLP 
+expression. It must be '?', '!', '#', '$', 'n', '@', '.',
+'~' or '+'. Enter a 
+valid character as the command character.
+ 
+
+ERROR (OSSGLD-18): The command character after '[' in the NLP expression '[0 0
+10m 3]
+' is not a valid 
+character. The command character is the first character
+after '[' in the NLP 
+expression. It must be '?', '!', '#', '$', 'n', '@', '.',
+'~' or '+'. Enter a 
+valid character as the command character.
+ 
+
+ERROR (OSSGLD-18): The command character after '[' in the NLP expression '[0 0
+10m 0]
+' is not a valid 
+character. The command character is the first character
+after '[' in the NLP 
+expression. It must be '?', '!', '#', '$', 'n', '@', '.',
+'~' or '+'. Enter a 
+valid character as the command character.
+ 
+
+ERROR (OSSGLD-18): The command character after '[' in the NLP expression '[0 0
+10m 0]
+' is not a valid 
+character. The command character is the first character
+after '[' in the NLP 
+expression. It must be '?', '!', '#', '$', 'n', '@', '.',
+'~' or '+'. Enter a 
+valid character as the command character.
+ 
+
+ERROR (OSSGLD-18): The command character after '[' in the NLP expression '[0 0
+10m 0]
+' is not a valid 
+character. The command character is the first character
+after '[' in the NLP 
+expression. It must be '?', '!', '#', '$', 'n', '@', '.',
+'~' or '+'. Enter a 
+valid character as the command character.
+ 
+
+ERROR (OSSGLD-18): The command character after '[' in the NLP expression '[0 0
+10m 0]
+' is not a valid 
+character. The command character is the first character
+after '[' in the NLP 
+expression. It must be '?', '!', '#', '$', 'n', '@', '.',
+'~' or '+'. Enter a 
+valid character as the command character.
+ 
+
+ERROR (OSSGLD-18): The command character after '[' in the NLP expression '[0 0
+10m 3]
+' is not a valid 
+character. The command character is the first character
+after '[' in the NLP 
+expression. It must be '?', '!', '#', '$', 'n', '@', '.',
+'~' or '+'. Enter a 
+valid character as the command character.
+ 
+
+ERROR (OSSGLD-18): The command character after '[' in the NLP expression '[0
+0]
+' is not a valid 
+character. The command character is the first character
+after '[' in the NLP 
+expression. It must be '?', '!', '#', '$', 'n', '@', '.',
+'~' or '+'. Enter a 
+valid character as the command character.
+ 
+
+	si: simin did not complete successfully.
