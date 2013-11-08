@@ -1,6 +1,6 @@
 \o Program:		@(#)$CDS: libManager.exe version 6.1.3_ISR 11/30/2009 15:29 (cat71lnx) $
 \o Sub version:		sub-version 07.02-s047
-\o Arguments:		-mpssession virtuoso24594 -mpshost rc28xece107 
+\o Arguments:		-mpssession virtuoso31075 -mpshost rc28xece107 
 \o Working Directory:	rc28xece107:/tmp/davidzGit
 \o Qt version: 		4.2.3
 \o Log file is "/tmp/davidzGit/libManager.log".
@@ -14,47 +14,24 @@
 \o Library Manager customization server connected.
 \a cdsLibManager->libListBox->value = "project"
 \a cdsLibManager->libLineEdit->value = "project"
-\a cdsLibManager->cellListBox->value = "or"
-\a cdsLibManager->cellLineEdit->value = "or"
+\a cdsLibManager->cellListBox->value = "and"
+\a cdsLibManager->cellLineEdit->value = "and"
 \a cdsLibManager->viewListBox->value = "layout"
-\a lmgrLogShowPopup("mainListPopup2" 14 12 2 "layout")
-\a cdsLibManager->fileOpenWithButton->value = t
-\o MPS request: edit design
-\a cdsLibManager->libListBox->value = nil
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->libLineEdit->value = ""
-\a cdsLibManager->libListBox->value = "project"
-\a cdsLibManager->libLineEdit->value = "project"
-\a cdsLibManager->cellListBox->value = "or"
-\a cdsLibManager->cellLineEdit->value = "or"
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->libListBox->value = nil
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->libLineEdit->value = ""
-\a cdsLibManager->libListBox->value = "project"
-\a cdsLibManager->libLineEdit->value = "project"
-\a cdsLibManager->cellListBox->value = "or"
-\a cdsLibManager->cellLineEdit->value = "or"
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
 \a cdsLibManager->viewListBox->value = "extracted"
-\a nrListItemAction(cdsLibManager->viewListBox 0 0)
+\a nrListItemAction(cdsLibManager->viewListBox 1 0)
 \o MPS request: edit design
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "project"
+\a cdsLibManager->libLineEdit->value = "project"
+\a cdsLibManager->cellListBox->value = "and"
+\a cdsLibManager->cellLineEdit->value = "and"
+\a cdsLibManager->viewListBox->value = "extracted"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "extracted"
 \a cdsLibManager->viewLineEdit->value = "extracted"
 \a nrSetCurrentWindow(cdsLibManager)
-\o MPS service: shutdown
-\o libManager is exiting.
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a exit(0)
+\a nrSetCurrentWindow(cdsLibManager)
