@@ -1,6 +1,6 @@
 \o Program:		@(#)$CDS: libManager.exe version 6.1.3_ISR 11/30/2009 15:29 (cat71lnx) $
 \o Sub version:		sub-version 07.02-s047
-\o Arguments:		-mpssession virtuoso31075 -mpshost rc28xece107 
+\o Arguments:		-mpssession virtuoso991 -mpshost rc28xece107 
 \o Working Directory:	rc28xece107:/tmp/davidzGit
 \o Qt version: 		4.2.3
 \o Log file is "/tmp/davidzGit/libManager.log".
@@ -12,11 +12,12 @@
 \o MPS service: map window
 \o MPS service: map window
 \o Library Manager customization server connected.
+\a nrSetCurrentWindow(cdsLibManager)
 \a cdsLibManager->libListBox->value = "project"
 \a cdsLibManager->libLineEdit->value = "project"
-\a cdsLibManager->cellListBox->value = "and"
-\a cdsLibManager->cellLineEdit->value = "and"
-\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->cellListBox->value = "4bit_or"
+\a cdsLibManager->cellListBox->value = "4bit_and"
+\a cdsLibManager->cellLineEdit->value = "4bit_and"
 \a cdsLibManager->viewListBox->value = "extracted"
 \a nrListItemAction(cdsLibManager->viewListBox 1 0)
 \o MPS request: edit design
@@ -27,11 +28,14 @@
 \a cdsLibManager->libLineEdit->value = ""
 \a cdsLibManager->libListBox->value = "project"
 \a cdsLibManager->libLineEdit->value = "project"
-\a cdsLibManager->cellListBox->value = "and"
-\a cdsLibManager->cellLineEdit->value = "and"
+\a cdsLibManager->cellListBox->value = "4bit_and"
+\a cdsLibManager->cellLineEdit->value = "4bit_and"
 \a cdsLibManager->viewListBox->value = "extracted"
 \a cdsLibManager->viewListBox->value = nil
 \a cdsLibManager->viewListBox->value = "extracted"
 \a cdsLibManager->viewLineEdit->value = "extracted"
 \a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
+\o MPS service: shutdown
+\o libManager is exiting.
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a exit(0)
