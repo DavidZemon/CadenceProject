@@ -1,26 +1,24 @@
 \o Program:		@(#)$CDS: libManager.exe version 6.1.3_ISR 11/30/2009 15:29 (cat71lnx) $
 \o Sub version:		sub-version 07.02-s047
-\o Arguments:		-mpssession virtuoso8135 -mpshost rc28xece107 
-\o Working Directory:	rc28xece107:/tmp/poop
+\o Arguments:		-mpssession virtuoso23648 -mpshost rc28xece107 
+\o Working Directory:	rc28xece107:/tmp/davidzGit
 \o Qt version: 		4.2.3
-\o Log file is "/tmp/poop/libManager.log".
+\o Log file is "/tmp/davidzGit/libManager.log".
 \o Opening libManager window.
 \a nrSetCurrentWindow(cdsLibManager)
 \a nrResizeWindow(cdsLibManager list(-9 19 600 574))
-\o changeWorkingDir("/tmp/poop") unnecessary.
+\o changeWorkingDir("/tmp/davidzGit") unnecessary.
 \o ddSetForcedLib("") unnecessary.
 \o MPS service: map window
-\o Library Manager customization server connected.
 \o MPS service: map window
+\o Library Manager customization server connected.
 \a cdsLibManager->libListBox->value = "project"
 \a cdsLibManager->libLineEdit->value = "project"
-\a cdsLibManager->cellListBox->value = "4b_adder_subtractor_tb"
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->cellLineEdit->value = "4b_adder_subtractor_tb"
-\a cdsLibManager->viewListBox->value = nil
-\a nrListItemAction(cdsLibManager->viewListBox 0 0)
-\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->cellListBox->value = "nor"
+\a cdsLibManager->cellLineEdit->value = "nor"
+\a cdsLibManager->viewListBox->value = "extracted"
+\a lmgrLogShowPopup("mainListPopup2" 17 31 2 "extracted")
+\a cdsLibManager->fileOpenWithButton->value = t
 \o MPS request: edit design
 \a cdsLibManager->libListBox->value = nil
 \a cdsLibManager->cellListBox->value = nil
@@ -29,12 +27,36 @@
 \a cdsLibManager->libLineEdit->value = ""
 \a cdsLibManager->libListBox->value = "project"
 \a cdsLibManager->libLineEdit->value = "project"
-\a cdsLibManager->cellListBox->value = "4b_adder_subtractor_tb"
-\a cdsLibManager->cellLineEdit->value = "4b_adder_subtractor_tb"
-\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->cellListBox->value = "nor"
+\a cdsLibManager->cellLineEdit->value = "nor"
+\a cdsLibManager->viewListBox->value = "extracted"
 \a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewListBox->value = "extracted"
+\a cdsLibManager->viewLineEdit->value = "extracted"
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "project"
+\a cdsLibManager->libLineEdit->value = "project"
+\a cdsLibManager->cellListBox->value = "nor"
+\a cdsLibManager->cellLineEdit->value = "nor"
+\a cdsLibManager->viewListBox->value = "extracted"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "extracted"
+\a cdsLibManager->viewLineEdit->value = "extracted"
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "or"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->cellLineEdit->value = "or"
+\a cdsLibManager->viewListBox->value = "layout"
+\a lmgrLogShowPopup("mainListPopup2" 22 9 2 "layout")
+\a cdsLibManager->viewLineEdit->value = "layout"
 \a nrSetCurrentWindow(cdsLibManager)
 \o MPS service: shutdown
 \o libManager is exiting.

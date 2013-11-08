@@ -1,0 +1,20 @@
+t 1 Vin input
+t 3 Vout output
+t 0 gnd! jumper
+t 2 vdd! jumper
+n 0 /gnd!
+n 1 /Vin
+n 2 /vdd!
+n 3 /Vout
+; pmos4 Instance /+1 = auLvs device Q0
+d pmos D G S B (p D S)
+i 0 pmos 3 1 2 2 " m 1 l 180e-9 w 450e-9 "
+; pcapacitor Instance /+6 = auLvs device C1
+d pcapacitor PLUS MINUS (p PLUS MINUS)
+; pcapacitor Instance /+5 = auLvs device C2
+; pcapacitor Instance /+4 = auLvs device C3
+; pcapacitor Instance /+3 = auLvs device C4
+; pcapacitor Instance /+2 = auLvs device C5
+; nmos4 Instance /+0 = auLvs device Q6
+d nmos D G S B (p D S)
+i 6 nmos 3 1 0 0 " m 1 l 180e-9 w 270e-9 "
