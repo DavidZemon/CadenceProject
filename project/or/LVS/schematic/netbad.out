@@ -1,0 +1,6 @@
+N /net4
+? Net does not cross-match. It has 4 connections.
+N /vdd!
+? Net does not cross-match. It has 4 connections.
+N /gnd!
+? Net does not cross-match. It has 4 connections.
