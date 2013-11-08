@@ -28,8 +28,6 @@ Compiling Diva LVS rules...
     N2        N0        gnd!
     N6        N1        vdd!
 
-Devices in the netlist but not in the rules:
-        pcapacitor
 Devices in the rules but not in the netlist:
         cap nfet pfet nmos4 pmos4
 
