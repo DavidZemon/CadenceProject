@@ -1,7 +1,7 @@
-t 1 Vin input
-t 3 Vout output
-t 0 gnd! jumper
-t 2 vdd! jumper
+t 1 Vin inputOutput
+t 3 Vout inputOutput
+t 0 gnd! inputOutput
+t 2 vdd! inputOutput
 
 n 0 /gnd!
 n 1 /Vin

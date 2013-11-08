@@ -1,6 +1,6 @@
 \o Program:		@(#)$CDS: libManager.exe version 6.1.3_ISR 11/30/2009 15:29 (cat71lnx) $
 \o Sub version:		sub-version 07.02-s047
-\o Arguments:		-mpssession virtuoso2565 -mpshost rc28xece107 
+\o Arguments:		-mpssession virtuoso3886 -mpshost rc28xece107 
 \o Working Directory:	rc28xece107:/tmp/davidzGit
 \o Qt version: 		4.2.3
 \o Log file is "/tmp/davidzGit/libManager.log".
@@ -13,48 +13,49 @@
 \o MPS service: map window
 \o Library Manager customization server connected.
 \a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
 \a cdsLibManager->libListBox->value = "project"
 \a cdsLibManager->libLineEdit->value = "project"
-\a cdsLibManager->cellListBox->value = "4bit_or"
-\a cdsLibManager->cellLineEdit->value = "4bit_or"
-\a cdsLibManager->viewListBox->value = "extracted"
-\a lmgrLogShowPopup("mainListPopup2" 33 2 2 "extracted")
-\a cdsLibManager->editDeleteButton->value = t
-\a deleteForm->deleteBothRadioButton->value = t
-\a deleteForm->deleteFilterEdit->value = "*"
-\a deleteForm->notDeleteFilterEdit->value = "*"
-\a nrSetWindowVisibility(deleteForm "show")
-\a cdsLibManager->viewLineEdit->value = "extracted"
-\a nrSetCurrentWindow(deleteForm)
-\a nrResizeWindow(deleteForm list(-9 82 627 425))
-\a deleteForm->OK->value = t
-\o QUESTION (CLM-199): The following 1 items are marked for deletion.  Are you sure?
-\a nrSetWindowVisibility(mcMBXDLG "show")
-\a nrSetCurrentWindow(mcMBXDLG)
-\a nrResizeWindow(mcMBXDLG list(0 0 405 323))
-\a mcMBXDLG->pushButton1->value = t
-\o Deleting view "extracted" from cell "4bit_or" in library "project".
-\a nrSetWindowVisibility(workingDialogForm "show")
-\a nrSetCurrentWindow(cdsLibManager)
-\o Deleted cellview 'project/4bit_or/extracted'.
-\o Deletion of 1 view done.
-\a cdsLibManager->libListBox->value = nil
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->libLineEdit->value = ""
-\a cdsLibManager->libListBox->value = "project"
-\a cdsLibManager->libLineEdit->value = "project"
-\a cdsLibManager->cellListBox->value = "4bit_or"
-\a cdsLibManager->cellLineEdit->value = "4bit_or"
-\a cdsLibManager->viewLineEdit->value = ""
-\a nrSetCurrentWindow(workingDialogForm)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrResizeWindow(workingDialogForm list(151 201 298 134))
+\a cdsLibManager->cellListBox->value = "or"
+\a cdsLibManager->cellListBox->value = "nor"
+\a cdsLibManager->cellListBox->value = "cmos_inv"
+\a cdsLibManager->cellLineEdit->value = "cmos_inv"
 \a cdsLibManager->viewListBox->value = "layout"
-\a nrListItemAction(cdsLibManager->viewListBox 0 0)
-\o MPS request: edit design
+\a lmgrLogShowPopup("mainListPopup2" 25 46 2 "layout")
+\a cdsLibManager->editRenameButton->value = t
+\a basicRenameForm->basicRenameFromEdit->value = "layout"
+\a nrSetWindowVisibility(basicRenameForm "show")
+\a basicRenameForm->basicRenameToEdit->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a nrSetCurrentWindow(basicRenameForm)
+\a nrResizeWindow(basicRenameForm list(120 173 343 194))
+\a basicRenameForm->basicRenameToEdit->value = "layout_pinless"
+\a basicRenameForm->OK->value = t
+\o Renaming View "layout" to "layout_pinless" in library "project".
+\a nrSetWindowVisibility(workingDialogForm "show")
+\a nrSetCurrentWindow(workingDialogForm)
+\a nrResizeWindow(workingDialogForm list(142 193 298 134))
+\a workingDialogForm->Close->value = t
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "project"
+\a cdsLibManager->libLineEdit->value = "project"
+\a cdsLibManager->cellListBox->value = "cmos_inv"
+\a cdsLibManager->cellLineEdit->value = "cmos_inv"
+\a cdsLibManager->viewListBox->value = "layout_pinless"
+\a lmgrLogShowPopup("mainListPopup2" 26 45 2 "layout_pinless")
+\a cdsLibManager->FileNewCVButton->value = t
+\a cdsLibManager->viewLineEdit->value = "layout_pinless"
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->viewListBox->value = "layout"
+\a lmgrLogShowPopup("mainListPopup2" 25 48 2 "layout")
+\a cdsLibManager->FileOpenROButton->value = t
+\o MPS request: open design readonly
 \a cdsLibManager->libListBox->value = nil
 \a cdsLibManager->cellListBox->value = nil
 \a cdsLibManager->viewListBox->value = nil
@@ -62,17 +63,87 @@
 \a cdsLibManager->libLineEdit->value = ""
 \a cdsLibManager->libListBox->value = "project"
 \a cdsLibManager->libLineEdit->value = "project"
-\a cdsLibManager->cellListBox->value = "4bit_or"
-\a cdsLibManager->cellLineEdit->value = "4bit_or"
+\a cdsLibManager->cellListBox->value = "cmos_inv"
+\a cdsLibManager->cellLineEdit->value = "cmos_inv"
 \a cdsLibManager->viewListBox->value = "layout"
 \a cdsLibManager->viewListBox->value = nil
 \a cdsLibManager->viewListBox->value = "layout"
 \a cdsLibManager->viewLineEdit->value = "layout"
 \a nrSetCurrentWindow(cdsLibManager)
 \a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->viewListBox->value = "extracted"
-\a nrListItemAction(cdsLibManager->viewListBox 0 0)
+\a cdsLibManager->viewListBox->value = "layout_pinless"
+\a lmgrLogShowPopup("mainListPopup2" 56 61 2 "layout_pinless")
+\a cdsLibManager->FileOpenROButton->value = t
+\o MPS request: open design readonly
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "project"
+\a cdsLibManager->libLineEdit->value = "project"
+\a cdsLibManager->cellListBox->value = "cmos_inv"
+\a cdsLibManager->cellLineEdit->value = "cmos_inv"
+\a cdsLibManager->viewListBox->value = "layout_pinless"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "layout_pinless"
+\a cdsLibManager->viewLineEdit->value = "layout_pinless"
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->viewListBox->value = "layout"
+\a lmgrLogShowPopup("mainListPopup2" 29 45 2 "layout")
+\a cdsLibManager->FileOpenButton->value = t
 \o MPS request: edit design
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "project"
+\a cdsLibManager->libLineEdit->value = "project"
+\a cdsLibManager->cellListBox->value = "cmos_inv"
+\a cdsLibManager->cellLineEdit->value = "cmos_inv"
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->viewListBox->value = "layout_pinless"
+\a nrListItemAction(cdsLibManager->viewListBox 3 0)
+\o MPS request: edit design
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "project"
+\a cdsLibManager->libLineEdit->value = "project"
+\a cdsLibManager->cellListBox->value = "cmos_inv"
+\a cdsLibManager->cellLineEdit->value = "cmos_inv"
+\a cdsLibManager->viewListBox->value = "layout_pinless"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "layout_pinless"
+\a cdsLibManager->viewLineEdit->value = "layout_pinless"
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(91 19 600 574))
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->viewListBox->value = "extracted"
+\a nrListItemAction(cdsLibManager->viewListBox 1 0)
+\o MPS request: edit design
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "project"
+\a cdsLibManager->libLineEdit->value = "project"
+\a cdsLibManager->cellListBox->value = "cmos_inv"
+\a cdsLibManager->cellLineEdit->value = "cmos_inv"
+\a cdsLibManager->viewListBox->value = "extracted"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "extracted"
 \a cdsLibManager->viewLineEdit->value = "extracted"
 \a nrSetCurrentWindow(cdsLibManager)
 \a nrSetCurrentWindow(cdsLibManager)
@@ -80,3 +151,4 @@
 \o libManager is exiting.
 \a nrSetWindowVisibility(cdsLibManager "hide")
 \a exit(0)
+\a basicRenameForm->basicRenameFromEdit->value = "foo"
