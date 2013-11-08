@@ -1,6 +1,6 @@
 \o Program:		@(#)$CDS: libManager.exe version 6.1.3_ISR 11/30/2009 15:29 (cat71lnx) $
 \o Sub version:		sub-version 07.02-s047
-\o Arguments:		-mpssession virtuoso1929 -mpshost rc28xece107 
+\o Arguments:		-mpssession virtuoso2565 -mpshost rc28xece107 
 \o Working Directory:	rc28xece107:/tmp/davidzGit
 \o Qt version: 		4.2.3
 \o Log file is "/tmp/davidzGit/libManager.log".
@@ -13,11 +13,45 @@
 \o MPS service: map window
 \o Library Manager customization server connected.
 \a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
 \a cdsLibManager->libListBox->value = "project"
 \a cdsLibManager->libLineEdit->value = "project"
 \a cdsLibManager->cellListBox->value = "4bit_or"
-\a cdsLibManager->cellListBox->value = "or"
-\a cdsLibManager->cellLineEdit->value = "or"
+\a cdsLibManager->cellLineEdit->value = "4bit_or"
+\a cdsLibManager->viewListBox->value = "extracted"
+\a lmgrLogShowPopup("mainListPopup2" 33 2 2 "extracted")
+\a cdsLibManager->editDeleteButton->value = t
+\a deleteForm->deleteBothRadioButton->value = t
+\a deleteForm->deleteFilterEdit->value = "*"
+\a deleteForm->notDeleteFilterEdit->value = "*"
+\a nrSetWindowVisibility(deleteForm "show")
+\a cdsLibManager->viewLineEdit->value = "extracted"
+\a nrSetCurrentWindow(deleteForm)
+\a nrResizeWindow(deleteForm list(-9 82 627 425))
+\a deleteForm->OK->value = t
+\o QUESTION (CLM-199): The following 1 items are marked for deletion.  Are you sure?
+\a nrSetWindowVisibility(mcMBXDLG "show")
+\a nrSetCurrentWindow(mcMBXDLG)
+\a nrResizeWindow(mcMBXDLG list(0 0 405 323))
+\a mcMBXDLG->pushButton1->value = t
+\o Deleting view "extracted" from cell "4bit_or" in library "project".
+\a nrSetWindowVisibility(workingDialogForm "show")
+\a nrSetCurrentWindow(cdsLibManager)
+\o Deleted cellview 'project/4bit_or/extracted'.
+\o Deletion of 1 view done.
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "project"
+\a cdsLibManager->libLineEdit->value = "project"
+\a cdsLibManager->cellListBox->value = "4bit_or"
+\a cdsLibManager->cellLineEdit->value = "4bit_or"
+\a cdsLibManager->viewLineEdit->value = ""
+\a nrSetCurrentWindow(workingDialogForm)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(workingDialogForm list(151 201 298 134))
 \a cdsLibManager->viewListBox->value = "layout"
 \a nrListItemAction(cdsLibManager->viewListBox 0 0)
 \o MPS request: edit design
@@ -28,25 +62,19 @@
 \a cdsLibManager->libLineEdit->value = ""
 \a cdsLibManager->libListBox->value = "project"
 \a cdsLibManager->libLineEdit->value = "project"
-\a cdsLibManager->cellListBox->value = "or"
-\a cdsLibManager->cellLineEdit->value = "or"
+\a cdsLibManager->cellListBox->value = "4bit_or"
+\a cdsLibManager->cellLineEdit->value = "4bit_or"
 \a cdsLibManager->viewListBox->value = "layout"
 \a cdsLibManager->viewListBox->value = nil
 \a cdsLibManager->viewListBox->value = "layout"
 \a cdsLibManager->viewLineEdit->value = "layout"
 \a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewListBox->value = nil
-\a nrListItemAction(cdsLibManager->viewListBox 1 0)
-\a cdsLibManager->viewListBox->value = "layout"
-\o MPS request: edit design
-\a cdsLibManager->viewLineEdit->value = "layout"
 \a nrSetCurrentWindow(cdsLibManager)
 \a cdsLibManager->viewListBox->value = "extracted"
 \a nrListItemAction(cdsLibManager->viewListBox 0 0)
 \o MPS request: edit design
 \a cdsLibManager->viewLineEdit->value = "extracted"
+\a nrSetCurrentWindow(cdsLibManager)
 \a nrSetCurrentWindow(cdsLibManager)
 \o MPS service: shutdown
 \o libManager is exiting.

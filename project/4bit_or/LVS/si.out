@@ -1,0 +1,101 @@
+@(#)$CDS: LVS version 6.1.3 05/19/2010 00:58 (cic612lnx) $
+
+Command line: /usr/local/cadence/IC610/tools.lnx86/dfII/bin/32bit/LVS -dir /tmp/davidzGit/project/4bit_or/LVS -l -s -t /tmp/davidzGit/project/4bit_or/LVS/layout /tmp/davidzGit/project/4bit_or/LVS/schematic
+Like matching is enabled.
+Net swapping is enabled.
+Using terminal names as correspondence points.
+Compiling Diva LVS rules...
+
+    Net-list summary for /tmp/davidzGit/project/4bit_or/LVS/layout/netlist
+       count
+	22		nets
+	14		terminals
+	12		pmos
+	12		nmos
+
+    Net-list summary for /tmp/davidzGit/project/4bit_or/LVS/schematic/netlist
+       count
+	22		nets
+	14		terminals
+	12		pmos
+	12		nmos
+
+
+    Terminal correspondence points
+    N15       N8        A<0>
+    N13       N9        A<1>
+    N11       N10       A<2>
+    N8        N3        A<3>
+    N20       N11       B<0>
+    N18       N4        B<1>
+    N17       N5        B<2>
+    N16       N12       B<3>
+    N12       N7        F<0>
+    N9        N13       F<1>
+    N21       N2        F<2>
+    N19       N6        F<3>
+    N10       N0        gnd!
+    N14       N1        vdd!
+
+Devices in the netlist but not in the rules:
+        pcapacitor
+Devices in the rules but not in the netlist:
+        cap nfet pfet nmos4 pmos4
+
+The net-lists match.
+
+			     layout  schematic
+				instances
+	un-matched		0	0
+	rewired			0	0
+	size errors		0	0
+	pruned			0	0
+	active			24	24
+	total			24	24
+
+				  nets
+	un-matched		0	0
+	merged			0	0
+	pruned			0	0
+	active			22	22
+	total			22	22
+
+				terminals
+	un-matched		0	0
+	matched but
+	different type		0	0
+	total			14	14
+
+
+Probe files from /tmp/davidzGit/project/4bit_or/LVS/schematic
+
+devbad.out:
+
+netbad.out:
+
+mergenet.out:
+
+termbad.out:
+
+prunenet.out:
+
+prunedev.out:
+
+audit.out:
+
+
+Probe files from /tmp/davidzGit/project/4bit_or/LVS/layout
+
+devbad.out:
+
+netbad.out:
+
+mergenet.out:
+
+termbad.out:
+
+prunenet.out:
+
+prunedev.out:
+
+audit.out:
