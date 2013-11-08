@@ -1,6 +1,6 @@
 \o Program:		@(#)$CDS: libManager.exe version 6.1.3_ISR 11/30/2009 15:29 (cat71lnx) $
 \o Sub version:		sub-version 07.02-s047
-\o Arguments:		-mpssession virtuoso991 -mpshost rc28xece107 
+\o Arguments:		-mpssession virtuoso1929 -mpshost rc28xece107 
 \o Working Directory:	rc28xece107:/tmp/davidzGit
 \o Qt version: 		4.2.3
 \o Log file is "/tmp/davidzGit/libManager.log".
@@ -16,10 +16,10 @@
 \a cdsLibManager->libListBox->value = "project"
 \a cdsLibManager->libLineEdit->value = "project"
 \a cdsLibManager->cellListBox->value = "4bit_or"
-\a cdsLibManager->cellListBox->value = "4bit_and"
-\a cdsLibManager->cellLineEdit->value = "4bit_and"
-\a cdsLibManager->viewListBox->value = "extracted"
-\a nrListItemAction(cdsLibManager->viewListBox 1 0)
+\a cdsLibManager->cellListBox->value = "or"
+\a cdsLibManager->cellLineEdit->value = "or"
+\a cdsLibManager->viewListBox->value = "layout"
+\a nrListItemAction(cdsLibManager->viewListBox 0 0)
 \o MPS request: edit design
 \a cdsLibManager->libListBox->value = nil
 \a cdsLibManager->cellListBox->value = nil
@@ -28,11 +28,24 @@
 \a cdsLibManager->libLineEdit->value = ""
 \a cdsLibManager->libListBox->value = "project"
 \a cdsLibManager->libLineEdit->value = "project"
-\a cdsLibManager->cellListBox->value = "4bit_and"
-\a cdsLibManager->cellLineEdit->value = "4bit_and"
-\a cdsLibManager->viewListBox->value = "extracted"
+\a cdsLibManager->cellListBox->value = "or"
+\a cdsLibManager->cellLineEdit->value = "or"
+\a cdsLibManager->viewListBox->value = "layout"
 \a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewListBox->value = nil
+\a nrListItemAction(cdsLibManager->viewListBox 1 0)
+\a cdsLibManager->viewListBox->value = "layout"
+\o MPS request: edit design
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a nrSetCurrentWindow(cdsLibManager)
 \a cdsLibManager->viewListBox->value = "extracted"
+\a nrListItemAction(cdsLibManager->viewListBox 0 0)
+\o MPS request: edit design
 \a cdsLibManager->viewLineEdit->value = "extracted"
 \a nrSetCurrentWindow(cdsLibManager)
 \o MPS service: shutdown
