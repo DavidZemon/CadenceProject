@@ -46,7 +46,7 @@ Running simulation in directory: "/tmp/davidzGit/project/and/LVS".
 
 
 
-Begin netlist:    Nov  7 21:36:50 2013
+Begin netlist:    Nov  9 23:32:19 2013
 	view name list	= ("auLvs" "extracted" "schematic")
 	stop name list	= ("auLvs")
 	library name	= "project"
@@ -55,7 +55,7 @@ Begin netlist:    Nov  7 21:36:50 2013
 	globals lib	= "basic"
 Running Artist Flat Netlisting ...
 *WARNING* Parameter 'lxUseCell' already exists.
-End netlist:    Nov  7 21:36:50 2013
+End netlist:    Nov  9 23:32:19 2013
 
 Moving original netlist to extNetlist
 Removing parasitic components from netlist
@@ -67,7 +67,7 @@ Removing parasitic components from netlist
 	7 nodes merged into 7 nodes
 
 
-Begin netlist:    Nov  7 21:36:50 2013
+Begin netlist:    Nov  9 23:32:19 2013
 	view name list	= ("auLvs" "schematic")
 	stop name list	= ("auLvs")
 	library name	= "project"
@@ -76,7 +76,7 @@ Begin netlist:    Nov  7 21:36:50 2013
 	globals lib	= "basic"
 Running Artist Flat Netlisting ...
 *WARNING* Parameter 'lxUseCell' already exists.
-End netlist:    Nov  7 21:36:50 2013
+End netlist:    Nov  9 23:32:19 2013
 
 Moving original netlist to extNetlist
 Removing parasitic components from netlist
@@ -88,7 +88,7 @@ Removing parasitic components from netlist
 	8 nodes merged into 8 nodes
 
 Running netlist comparison program:  LVS
-Begin comparison:    Nov  7 21:36:51 2013
+Begin comparison:    Nov  9 23:32:19 2013
 @(#)$CDS: LVS version 6.1.3 05/19/2010 00:58 (cic612lnx) $
 
 The net-lists match.
@@ -114,7 +114,7 @@ The net-lists match.
 	matched but
 	different type		1	1
 	total			5	5
-End comparison:      Nov  7 21:36:51 2013
+End comparison:      Nov  9 23:32:20 2013
 
 
 Comparison program completed successfully.

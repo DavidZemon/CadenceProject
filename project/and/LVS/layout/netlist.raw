@@ -33,7 +33,7 @@ i 4 pcapacitor 4 2 " c 72.2844e-18 "
 i 5 pcapacitor 5 2 " c 113.927e-18 "
 
 ; pcapacitor Instance /+15 = auLvs device C6
-i 6 pcapacitor 2 1 " c 579.359e-18 "
+i 6 pcapacitor 2 1 " c 569.85e-18 "
 
 ; pcapacitor Instance /+14 = auLvs device C7
 i 7 pcapacitor 3 2 " c 80.388e-18 "
