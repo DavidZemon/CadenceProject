@@ -1,108 +1,357 @@
-;--------------------------------------------------------------------------
-;
-;This is a sample environment variable file containing the default
-;values for environment variables in Design Framework II products.
-;See the appropriate tool documentation regarding the use and
-;choices for each variable.
-;To customize your defaults, use this file as a template and place
-;a modified version of this file in ../local/.cdsenv.  This
-;local version should typically reflect the values of your system
-;defaults as set by your site coordinator.  To specify more personal
-;defaults, place a modified version of either this or the
-;../local/.cdsenv file into your home directory as .cdsenv.
-;Your ../local/.cdsenv file will be loaded first, followed
-;by the .cdsenv in your home directory, so any values in ~/.cdsenv
-;will override those previously loaded.
-;
-;==========================================================================
-
-;--------------------------------------------------------------------------
-; DLE variables
-;--------------------------------------------------------------------------
-adle mfactorSplit boolean nil
-;adle stopList string "layout"
-;adle viewList string "cmos_sch schematic"
-
-;--------------------------------------------------------------------------
-; Analog Artist Simulation Environment Defaults
-; FORMAT: tool[.partition] varName type value private {choices, minmax} comment
-;--------------------------------------------------------------------------
-asimenv.startup       simulator       string  "hspiceD"
-asimenv.startup       projectDir      string  "~/cadence/simulation"
-asimenv.window        x       int     100
-asimenv.window        y       int     480
-asimenv.plotting      width   int     900
-asimenv.plotting      height  int     700
-asimenv.plotting      x       int     100
-asimenv.plotting      y       int     40
-
-
-;--------------------------------------------------------------------------
-; cdsSpice environment variables
-;--------------------------------------------------------------------------
-;cdsSpice.envOpts    modelPath       string  "~/cadence/models /afs/eos/dist/cadence/local/models"
-
-
-;--------------------------------------------------------------------------
-; ddserv Environment Variables
-;--------------------------------------------------------------------------
-ddserv        showWhatsNew    string  "no"
-
-
-;--------------------------------------------------------------------------
-; Graphics Editor and Design Editor Environment Variables
-;--------------------------------------------------------------------------
-;graphic       drfPath string  "/afs/eos/dist/cadence/local/cdssetup/display.drf"
-
-
-;--------------------------------------------------------------------------
-; hspiceS environment variables
-;--------------------------------------------------------------------------
-;hspiceS.envOpts 	modelPath       string  "~/cadence/models/hspice /afs/eos/dist/cadence/local/models/hspice/public"
-
-
-;--------------------------------------------------------------------------
-;Layout Environment Variables
-;--------------------------------------------------------------------------
-layout        leWindowBBox    string  "((100 160) (1000 860))"
-layout        originMarkersOn boolean nil
-; the snap spacing is set to be a multiple of all the mfgGridResolutions
-; this is just to prevent warning messages; the correct value is set in
-; local/skill/misc/triggers.il
-layout        xSnapSpacing    float   6.0
-layout        ySnapSpacing    float   6.0
-layout        gravityOn       boolean nil
-layout        gravityType     string  ""
-
-
-;--------------------------------------------------------------------------
-; Schematic Editor Environment Variables
-;--------------------------------------------------------------------------
-schematic     browserType     string  "component"
-schematic     schWindowBBox   string  "((130 150) (1030 850))"
-schematic     symWindowBBox   string  "((130 150) (1030 850))"
-
-
-;--------------------------------------------------------------------------
-; spectreS environment variables
-;--------------------------------------------------------------------------
-;spectreS.envOpts    modelPath       string  "~/cadence/models/spectre /afs/eos/dist/cadence/local/models/spectre/public"
-
-
-;--------------------------------------------------------------------------
-; User Preference Defaults
-;--------------------------------------------------------------------------
-ui    showScrollBars  boolean t
-ui    showOptionForms boolean t
-ui    undoLevel       int     10
-
-;--------------------------------------------------------------------------
-; Try to stop the "out of memory" errors in cdsSpice
-;--------------------------------------------------------------------------
-;cdsSpice.init   languageSize    int     1000
-;spectreS.init   languageSize    int     1000
-;hspiceS.init    languageSize    int     1000
-
-
-layout	xSnapSpacing	float	0.0025
-layout	ySnapSpacing	float	0.0025
+asimenv	showWhatsNew	string	"6.1.3"
+asimenv.plotting	width	int	900
+asimenv.plotting	x	int	100
+asimenv.plotting	y	int	40
+asimenv.plotting	height	int	700
+asimenv.startup	simulator	string	"hspiceD"
+asimenv.startup	projectDir	string	"~/cadence/simulation"
+asimenv.window	x	int	100
+asimenv.window	y	int	480
+ddserv	showWhatsNew	string	"no"
+graphic	packetDialogBoxes	boolean	nil
+graphic	netExprDisplay	string	"value only"
+graphic	drfPath	string	"/usr/local/cadence/FreePDK45//ncsu_basekit/cdssetup/display.drf"
+layout	tapLayerFilter	string	""
+layout	arrayDisplay	string	"Full"
+layout	balloonTransparency	int	50
+layout	softFence	boolean	nil
+layout	maxDragFig	int	500
+layout	remasterInstSearchViewText	string	""
+layout	viaParamCalcMode	cyclic	"minRulesAndViaDef"
+layout	fixedWidthPaths	boolean	nil
+layout	reshapeType	cyclic	"rectangle"
+layout	virtualPinSizeType	cyclic	"auto"
+layout	alignApplySpacing	boolean	nil
+layout	labelJustify	cyclic	"centerCenter"
+layout	fitIntoClusterBoundary	boolean	nil
+layout	viaCompuEnclosures	boolean	t
+layout	anchor	cyclic	"left"
+layout	gravityType	string	""
+layout	markerZoomScale	int	1
+layout	remasterInstSearchLibText	string	""
+layout	minStippleSize	float	1
+layout	wireViaParamCalcMode	cyclic	"minRules"
+layout	cursorShape	boolean	nil
+layout	delDetachedBlockages	boolean	nil
+layout	filterSize	float	6
+layout	rowPartitionBottomOffset	float	0
+layout	blockageKeepOwner	boolean	nil
+layout	alignUsing	string	"object"
+layout	createInRoutes	boolean	t
+layout	displayStretchHandles	boolean	nil
+layout	labelText	string	""
+layout	leDispNetExpr	boolean	t
+layout	pickNCreate	boolean	nil
+layout	extractAfterGenerateAll	boolean	t
+layout	keepFirstTermName	boolean	nil
+layout	keepWiresConnected	boolean	t
+layout	lockAngles	boolean	t
+layout	pathCL	cyclic	"yes"
+layout	preserveTerminalContacts	boolean	nil
+layout	qcAutoAbutment	boolean	t
+layout	dimmingScope	string	"none"
+layout	drdEditVioLimit	int	10
+layout	enableFloatingBusCreate	boolean	nil
+layout	instLibName	string	""
+layout	pinTextSameLayer	boolean	nil
+layout	preservePins	boolean	nil
+layout	toggle	boolean	nil
+layout	viaUseRowColDefault	boolean	t
+layout	alignObjType	cyclic	"instance"
+layout	gravityDepth	int	0
+layout	pinSelectionMode	cyclic	"ignoreLPP"
+layout	rowSiteSpacing	float	0
+layout	clusterBoundaryUtilization	float	80
+layout	alignSortMethod	cyclic	"alignDirection"
+layout	pathSegBeginExt	float	0
+layout	snapToGrid	boolean	nil
+layout	trlBendFac	float	1
+layout	textJustificationOn	boolean	t
+layout	extendPathLengthCheck	boolean	nil
+layout	pathOffset	float	0
+layout	matchWireWidth	boolean	nil
+layout	displayPinNames	boolean	t
+layout	gravityOn	boolean	nil
+layout	mppTemplate	string	"New"
+layout	gravityBounceX	float	0
+layout	tapStylesMode	cyclic	"tapSameEndStyles"
+layout	polygonArc	boolean	nil
+layout	snapToPin	boolean	t
+layout	minLabelSize	float	1
+layout	flattenPCells	boolean	nil
+layout	instDelX	float	0
+layout	remasterInstCheckTerms	boolean	nil
+layout	viaRows	int	1
+layout	alignSpacingValue	float	1
+layout	autoTapShape	boolean	nil
+layout	measurementTextHeight	int	10
+layout	remasterInstUpdateCellText	string	""
+layout	alignReverseSort	boolean	nil
+layout	applyBounce	boolean	nil
+layout	displayViaShapes	boolean	nil
+layout	multiSegRuler	boolean	nil
+layout	rowFlipFirstUnit	boolean	nil
+layout	nPtsToTaper	int	20
+layout	pathBeginExt	float	0
+layout	coalesceLimit	int	16
+layout	topologyZoomAfterPick	boolean	t
+layout	drdEditDisplayMarkers	boolean	nil
+layout	magnification	float	1
+layout	pinWidth	float	0.6
+layout	recursionCheck	boolean	t
+layout	rodAutoName	string	""
+layout	stretchPCellApplyToName	boolean	t
+layout	viaCheckShapeConn	boolean	t
+layout	copyToLayer	boolean	nil
+layout	instDelY	float	0
+layout	pinShape	cyclic	"rectangle"
+layout	drawSurroundingOn	boolean	t
+layout	drdEditDisplayText	boolean	t
+layout	instLabel	string	"master"
+layout	leWindowBBox	string	"((100 160) (1000 860))"
+layout	measurementDisplayOn	boolean	nil
+layout	openToStopLevel	boolean	t
+layout	rowBaseName	string	""
+layout	haloLeftOffset	float	0
+layout	alignRefObjType	cyclic	"instance"
+layout	drdEditMode	cyclic	"off"
+layout	filterSizeDrawingStyle	string	"empty"
+layout	abutServerOn	boolean	t
+layout	drdEditDisplayEdges	boolean	nil
+layout	setupConstraintGroup	string	"virtuosoDefaultExtractorSetup"
+layout	rowAbutFirstUnit	boolean	nil
+layout	haloBottomOffset	float	0
+layout	matchPinWidth	boolean	nil
+layout	gravityAperture	float	0.3
+layout	originMarkersOn	boolean	nil
+layout	propEditFloatFieldFormat	int	0
+layout	lmpiModeOn	boolean	nil
+layout	filteredNetName	string	""
+layout	coalesceRatio	int	50
+layout	useEditorBackgroundColorForLSW	boolean	t
+layout	labelAttach	boolean	nil
+layout	labelMode	cyclic	"manual"
+layout	labelHeight	float	1
+layout	alignSpacingType	string	"spacings"
+layout	flattenMode	cyclic	"one level"
+layout	numLevels	int	32
+layout	connStatus	cyclic	"needToConnect"
+layout	tinyInstDetail	boolean	nil
+layout	selectionAperture	int	5
+layout	rowFlipUnit	boolean	nil
+layout	clusterBoundaryAspectRatio	float	1
+layout	blockageAttachOwner	string	"none"
+layout	outlineOnly	boolean	t
+layout	trlWidth2	float	20
+layout	trlWidth1	float	20
+layout	termName	string	""
+layout	instRows	int	1
+layout	autoNetName	boolean	t
+layout	confirmDelete	boolean	nil
+layout	ignoreBounce	boolean	nil
+layout	netsOn	boolean	t
+layout	rowPartitionRightOffset	float	0
+layout	blockagePlacementHaloOverwriteMode	boolean	nil
+layout	gatherBusStyle	cyclic	"straight"
+layout	viaOnlyForNets	boolean	nil
+layout	createPinLabel	boolean	nil
+layout	descendPromptForView	boolean	nil
+layout	preserveRodObjects	boolean	nil
+layout	remasterInstVCEConnVerifyer	boolean	nil
+layout	netName	string	""
+layout	jumpersOn	boolean	nil
+layout	viaAssistance	cyclic	"snap"
+layout	makeCellCellType	cyclic	"none"
+layout	useTapPurposeList	boolean	t
+layout	displayRowName	boolean	nil
+layout	drawAxesOn	boolean	t
+layout	drdEditTextHeight	int	10
+layout	enableBusEdit	boolean	t
+layout	pathEndExt	float	0
+layout	drdEditDisplayOffScreenVio	boolean	t
+layout	instViewName	string	"layout"
+layout	rowCreateMethod	cyclic	"assisted"
+layout	instHalosEnabled	boolean	t
+layout	autoTapType	string	"layer attributes"
+layout	copyRows	int	1
+layout	iconsOn	boolean	nil
+layout	muteUnstretchableOption	boolean	t
+layout	pathJustify	cyclic	"center"
+layout	rowPartitionTopOffset	float	0
+layout	tapType	string	"layer"
+layout	chainMode	cyclic	"selected"
+layout	chopArray	boolean	nil
+layout	drdEditDisplayArrows	boolean	t
+layout	snapMode	string	"orthogonal"
+layout	gravityBounceY	float	0
+layout	instanceDrawingMode	string	"BBox"
+layout	layerTapPickWireVia	boolean	nil
+layout	pathStyle	cyclic	"truncateExtend"
+layout	pinLayerPurpose	string	""
+layout	rowFirstUnitOrient	string	"Horizontal"
+layout	balloonPauseTime	float	0
+layout	gridMultiple	int	5
+layout	labelDrafting	boolean	t
+layout	blockageType	string	"routing"
+layout	virtualPinWidth	float	0.6
+layout	interactiveChecking	boolean	t
+layout	xSnapSpacing	float	0.045
+layout	alignDirection	string	"vertical"
+layout	mppASCIIFileName	string	""
+layout	showWhatsNew	string	"6.1"
+layout	autoReshape	boolean	nil
+layout	tapConnectedFigsOnly	boolean	nil
+layout	matchPinWidthValue	cyclic	"narrow"
+layout	acuteAnglePath	boolean	t
+layout	displaySelectionHighlightWhenDimmed	boolean	t
+layout	keepRuler	boolean	t
+layout	alignReference	string	"point"
+layout	displayRefPoint	boolean	nil
+layout	extractStopLevel	int	0
+layout	propClass	cyclic	"attributes"
+layout	rowUnitOrient	cyclic	"R0"
+layout	termDirection	cyclic	"inputOutput"
+layout	instCellName	string	""
+layout	pinAccessDir	string	"left right top bottom"
+layout	criticality	int	10
+layout	wireWidth	float	0.6
+layout	acuteAngleWire	boolean	nil
+layout	autoPermutePins	boolean	t
+layout	autoTap	boolean	t
+layout	drawGridOn	boolean	t
+layout	partialSelect	boolean	nil
+layout	pathWidth	float	0.6
+layout	removeChopShape	boolean	t
+layout	viaColumns	int	1
+layout	autoRefresh	boolean	nil
+layout	deleteTarget	cyclic	"selected"
+layout	rowPartitionLeftOffset	float	0
+layout	rowNumberOfRows	int	1
+layout	orientation	cyclic	"R0"
+layout	segSnapMode	string	"orthogonal"
+layout	minRefreshArea	int	10
+layout	autoSetRefPoint	boolean	t
+layout	copyColumns	int	1
+layout	tapEndStyles	boolean	t
+layout	pathSegEndExt	float	0
+layout	balloonFadeTime	float	5
+layout	drawDottedGridOn	boolean	t
+layout	remasterInstSearchCellText	string	""
+layout	yankShape	cyclic	"rectangle"
+layout	useTrueBBox	boolean	nil
+layout	usePrevPointForVia	boolean	nil
+layout	createWireMode	cyclic	"segments"
+layout	dimmingIntensity	int	50
+layout	dotsOn	boolean	nil
+layout	moveToLayer	boolean	nil
+layout	alignMethod	cyclic	"lowerLeft"
+layout	useOverlapsForConnectivity	boolean	t
+layout	tapPurposeList	string	"drawing"
+layout	drdEditSuppressExtendedChecking	boolean	t
+layout	measurementDisplayTypes	string	"deltaXY distance radius area length width"
+layout	probeTextOn	boolean	t
+layout	figOrder	cyclic	"current"
+layout	viaPattern	cyclic	"diag_1"
+layout	autoCompleteContact	boolean	t
+layout	displayStopLevel	int	0
+layout	preservePinFigs	boolean	t
+layout	rowAbutNumberOfUnits	int	2
+layout	bannerFields	string	"Cmd"
+layout	drdEditDisplayHalo	boolean	t
+layout	dynamicHilightOn	boolean	t
+layout	pinTextLayer	string	"text"
+layout	remasterInstUpdateViewText	string	""
+layout	taperStyle	cyclic	"linear"
+layout	trlBendStyle	cyclic	"bend"
+layout	displayStartLevel	int	0
+layout	instColumns	int	1
+layout	snapToTrack	boolean	nil
+layout	wireOffset	float	0
+layout	autoVia	boolean	nil
+layout	instName	string	""
+layout	modCornerRadius	float	1
+layout	stopLevel	int	10
+layout	haloTopOffset	float	0
+layout	pruneSize	float	1
+layout	accessEdgesOn	boolean	nil
+layout	autoStitchVirtualPin	boolean	t
+layout	pinTextPurpose	string	"drawing"
+layout	zoomToFig	boolean	nil
+layout	ySnapSpacing	float	0.045
+layout	trlNPtsToPI	int	20
+layout	showAlignmentMarkers	boolean	nil
+layout	labelLPP	cyclic	"currentLayer"
+layout	remasterInstUpdateLibText	string	""
+layout	replaceFigs	boolean	t
+layout	selectOnlyInstWithSelectableShapes	boolean	nil
+layout	labelFontStyle	cyclic	"stick"
+layout	modalCommands	boolean	t
+layout	rowNumberOfSites	int	1
+layout	rowAbutUnit	boolean	nil
+layout	haloRightOffset	float	0
+layout	viewNameList	string	""
+layout	viaMode	cyclic	"Single"
+layout	chopShape	cyclic	"rectangle"
+layout	drawInstancePins	boolean	t
+layout	_enableBusFinishWires	boolean	nil
+layout	startLevel	int	0
+layout	iterNum	int	0
+layout	viaHideEnclosures	boolean	t
+layout	trlRadFac	float	3
+layout	drdEditHierDepth	int	0
+layout	layerTapPick	boolean	t
+layout	modCornerType	cyclic	"radial"
+layout	rowSiteEnable	boolean	nil
+layout	alignRefMethod	cyclic	"center"
+layout	gridSpacing	float	0.09
+layout	virtualPinHeight	float	0.6
+layout	balloonOn	boolean	nil
+layout	drdEditAutoText	boolean	t
+layout	extractEnabled	boolean	t
+layout	numSides	int	20
+layout	autoTerminate	boolean	t
+layout	displayRowSite	boolean	nil
+layout	rowChannelWidth	float	0
+layout	eipRedraw	boolean	nil
+layout	trlChamFac	float	0.6
+layout	labelExpand	boolean	t
+layoutOptimize	ignorePurpose	boolean	t
+layoutOptimize	techfile	string	"DFII Tech DB (layers only)"
+layoutXL	ciwWindow	string	"((-9.0 290.0) (716.0 483.0))"
+layoutXL	mfactorSplit	boolean	nil
+layoutXL	lswWindow	string	"((2.0 445.0) (152.0 1145.0))"
+license	VLSXL_UseNextLicense	string	"always"
+license	VLSL_UseNextLicense	string	"always"
+license	ADEL_UseNextLicense	string	"always"
+license	VSEL_UseNextLicense	string	"always"
+schematic	schWindowBBox	string	"((130 150) (1030 850))"
+schematic	browserType	string	"component"
+schematic	drawMode	string	"anyAngle"
+schematic	symWindowBBox	string	"((130 150) (1030 850))"
+schematic	autoDot	boolean	t
+ui	promptOutput	boolean	nil
+ui	accelReturnValue	boolean	nil
+ui	undoLevel	int	10
+ui	showMouseBar	cyclic	"Bottom"
+ui	ciwCmdHistorySize	int	0
+ui	showOptionForms	boolean	t
+ui	tearOffMenus	boolean	t
+ui	warningOutput	boolean	t
+ui	errorOutput	boolean	t
+ui	nestLimit	int	5
+ui	winPlaceStyle	boolean	nil
+ui	beepVolume	int	0
+ui	infix	boolean	nil
+ui	showScrollBars	boolean	t
+ui	showStatusLines	boolean	t
+ui	enableMenuShortcuts	boolean	t
+ui	webBrowser	string	"netscape"
+ui	dblClkTime	int	200
+ui	setWinTraversal	boolean	nil
+ui	ciwLogHistorySize	int	1000
+ui	standardOutput	boolean	t
+ui	ciwCmdExecuteOnEnter	boolean	t
+ui	ciwCmdInputLines	int	1
+ui	accelInput	boolean	nil
+ui	typedReturnValue	boolean	t
+ui	showPromptLines	boolean	t
