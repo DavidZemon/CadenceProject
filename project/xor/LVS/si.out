@@ -8,25 +8,25 @@ Compiling Diva LVS rules...
 
     Net-list summary for /tmp/davidzGit/project/xor/LVS/layout/netlist
        count
-	15		nets
+	6		nets
 	5		terminals
-	11		pmos
-	11		nmos
+	3		pmos
+	3		nmos
 
     Net-list summary for /tmp/davidzGit/project/xor/LVS/schematic/netlist
        count
-	15		nets
+	6		nets
 	5		terminals
-	11		pmos
-	11		nmos
+	3		pmos
+	3		nmos
 
 
     Terminal correspondence points
-    N13       N6        A
-    N12       N7        B
-    N11       N3        F
-    N10       N1        gnd!
-    N14       N0        vdd!
+    N4        N2        A
+    N2        N6        AxorB
+    N3        N7        B
+    N1        N0        gnd!
+    N5        N1        vdd!
 
 Devices in the netlist but not in the rules:
         pcapacitor
@@ -41,20 +41,20 @@ The net-lists match.
 	rewired			0	0
 	size errors		0	0
 	pruned			0	0
-	active			22	22
-	total			22	22
+	active			6	6
+	total			6	6
 
 				  nets
 	un-matched		0	0
 	merged			0	0
 	pruned			0	0
-	active			15	15
-	total			15	15
+	active			6	6
+	total			6	6
 
 				terminals
 	un-matched		0	0
 	matched but
-	different type		0	0
+	different type		1	1
 	total			5	5
 
 
@@ -67,6 +67,7 @@ netbad.out:
 mergenet.out:
 
 termbad.out:
+? Terminal AxorB's type in the schematic: output, in the layout: jumper
 
 prunenet.out:
 
@@ -84,6 +85,7 @@ netbad.out:
 mergenet.out:
 
 termbad.out:
+? Terminal AxorB's type in the layout: jumper, in the schematic: output
 
 prunenet.out:
 
