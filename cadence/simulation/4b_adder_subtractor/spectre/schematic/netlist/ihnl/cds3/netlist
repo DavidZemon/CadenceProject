@@ -1,4 +1,0 @@
-    I2 (net4 F inh_inh_bn) cmos_inv
-    I0 (A B net4 inh_inh_bn) nor
-ends or
-// End of subcircuit definition.

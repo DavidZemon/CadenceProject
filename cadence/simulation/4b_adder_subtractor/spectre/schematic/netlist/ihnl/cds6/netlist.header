@@ -1,5 +1,0 @@
-
-// Library name: project
-// Cell name: 1b_fullAdder
-// View name: schematic
-subckt project_1b_fullAdder_schematic A B Ci Co S inh_inh_bn

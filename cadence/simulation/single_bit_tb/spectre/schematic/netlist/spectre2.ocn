@@ -1,5 +1,0 @@
-simulator( 'spectre )
-design(	 "/tmp/kancy/cadence/simulation/single_bit_tb/spectre/schematic/netlist/netlist")
-resultsDir( "/tmp/kancy/cadence/simulation/single_bit_tb/spectre/schematic" )
-temp( 27 ) 
-run()

@@ -1,5 +1,0 @@
-
-// Library name: project
-// Cell name: and
-// View name: schematic
-subckt and A B F inh_inh_bn

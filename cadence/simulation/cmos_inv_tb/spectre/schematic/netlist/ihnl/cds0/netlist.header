@@ -1,5 +1,0 @@
-
-// Library name: 0_Tutorial
-// Cell name: cmos_inv
-// View name: extracted
-subckt cmos_inv Vin Vout

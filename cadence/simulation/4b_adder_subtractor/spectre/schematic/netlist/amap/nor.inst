@@ -1,8 +1,0 @@
-HEADER
-"PSFversion" "1.00"
-"M1n M0n" "NCSU_Analog_Parts_nmos_spectre"
-"M3n M2n" "NCSU_Analog_Parts_pmos_spectre"
-"Av" ":1v"
-"Bv" ":2v"
-"Fv" ":3v"
-"[@inh_bn:%:gnd!]v" ":4v"

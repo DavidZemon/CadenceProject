@@ -1,5 +1,0 @@
-
-// Library name: project
-// Cell name: nor
-// View name: schematic
-subckt nor A B F inh_inh_bn

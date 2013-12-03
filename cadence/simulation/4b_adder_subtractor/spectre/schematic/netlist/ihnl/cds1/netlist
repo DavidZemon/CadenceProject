@@ -1,4 +1,0 @@
-    M0 (Vout Vin 0 gnd!) tsmc18dN w=270.0n l=180.0n as=1.215e-13 ad=1.215e-13 ps=1.44u pd=1.44u m=1 region=sat
-    M1 (Vout Vin vdd! vdd!) tsmc18dP w=270.0n l=180.0n as=1.215e-13 ad=1.215e-13 ps=1.44u pd=1.44u m=1 region=sat
-ends cmos_inv
-// End of subcircuit definition.

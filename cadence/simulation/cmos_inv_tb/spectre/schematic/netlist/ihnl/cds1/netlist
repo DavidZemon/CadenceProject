@@ -1,9 +1,0 @@
-
-// Library name: 0_Tutorial
-// Cell name: cmos_inv_tb
-// View name: schematic
-Inv_0 (net4 Vout) cmos_inv
-V0 (vdd! 0) vsource type=dc dc=1.8
-C0 (Vout 0) capacitor c=10f m=1
-V1 (net4 0) vsource type=pulse val0=0 val1=1.8 period=80n delay=0 \
-        rise=100p fall=100p width=40n

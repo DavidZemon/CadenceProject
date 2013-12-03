@@ -1,7 +1,0 @@
-    I3 (A B net12 inh_inh_bn) and
-    I2 (net11 Ci net15 inh_inh_bn) and
-    I4 (net15 net12 Co inh_inh_bn) or
-    I1 (net11 S Ci inh_inh_bn) xor
-    I0 (A net11 B inh_inh_bn) xor
-ends project_1b_fullAdder_schematic
-// End of subcircuit definition.

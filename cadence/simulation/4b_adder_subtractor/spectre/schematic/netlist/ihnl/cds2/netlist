@@ -1,6 +1,0 @@
-    M1 (F B 0 gnd!) tsmc18dN w=270.0n l=180.0n as=1.215e-13 ad=1.215e-13 ps=1.44u pd=1.44u m=1 region=sat
-    M0 (F A 0 gnd!) tsmc18dN w=270.0n l=180.0n as=1.215e-13 ad=1.215e-13 ps=1.44u pd=1.44u m=1 region=sat
-    M3 (net14 A vdd! vdd!) tsmc18dP w=1.62u l=180.0n as=7.29e-13 ad=7.29e-13 ps=4.14u pd=4.14u m=1 region=sat
-    M2 (F B net14 vdd!) tsmc18dP w=1.62u l=180.0n as=7.29e-13 ad=7.29e-13 ps=4.14u pd=4.14u m=1 region=sat
-ends nor
-// End of subcircuit definition.

@@ -1,3 +1,0 @@
-simulator lang=spectre
-vdd (vdd! 0) vsource dc=3
-vA0 (A_0 0) vsource type=pw1 wave=vA1 (A_1 0) vsource type=pw1 wave=vA2 (A_2 0) vsource type=pw1 wave=vA3 (A_3 0) vsource type=pw1 wave=vB0 (B_0 0) vsource type=pw1 wave=vB1 (B_1 0) vsource type=pw1 wave=vB2 (B_2 0) vsource type=pw1 wave=vB3 (B_3 0) vsource type=pw1 wave=ci (Ci 0) vsource type=pw1 wave=Op (op 0) vsource type=pw1 wave=
