@@ -90,6 +90,12 @@ si: simSetDef().... simDoPostLayout is initialized to "nil".
 si: simSetDef().... simActions is initialized to (simLVSCheckVariables()
 simLVSNetlist("layout") simLVSNetlist("schematic") simLVSConvertXPoints()
 simLVSRunSim() simLVSSimout("schematic") simLVSSimout("layout")) .
+si: simSetDef().... lvsSchematicViewList is initialized to ("auLvs" "schematic")
+.
+si: simSetDef().... lvsLayoutViewList is initialized to ("auLvs" "extracted"
+"schematic") .
+si: simSetDef().... lvsLayoutStopList is initialized to ("auLvs") .
+si: simSetDef().... lvsSchematicStopList is initialized to ("auLvs") .
 si: simSetDef().... simInstViewListTable is initialized to "nil".
 si: simSetDef().... simInstStopListTable is initialized to "nil".
 si: simSetDef().... __auLvsCdnsFmt is initialized to "fmtenbld" .
@@ -98,8 +104,8 @@ si: simSetDef().... lvsNetlistLayout is already set to t. Redefinition to nil is
 ignored.
 si: simSetDef().... lvsNetlistSchematic is already set to t. Redefinition to nil
 is ignored.
-si: simSetDef().... correspondenceFile is already set to
-"/tmp/davidzGit/lvs_corr_file". Redefinition to nil is ignored.
+si: simSetDef().... correspondenceFile is already set to "lvs_corr_file".
+Redefinition to nil is ignored.
 si: simSetDef().... createXref is initialized to "nil".
 si: simSetDef().... disableLikeMatch is initialized to "nil".
 si: simSetDef().... disableRewire is initialized to "nil".
@@ -114,6 +120,7 @@ Redefinition to "" is ignored.
 si: simSetDef().... lvsRulesFromLib is already set to t. Redefinition to nil is
 ignored.
 si: simSetDef().... lvsLimitLinesInOutFile is initialized to 20 .
+si: simSetDef().... lvsAvSwitches is initialized to "" .
 si: simSetDef().... simSimulatorUnbindFuncs is initialized to (auLvs
 simLVSCheckVariables simLVSNetlist simLVSConvertXPoints simLVSRunSim
 simLVSSimout simNotNilOrEmpty simCatWithSlash) .
@@ -142,8 +149,8 @@ si: simSetDef().... lvsNetlistLayout is already set to t. Redefinition to nil is
 ignored.
 si: simSetDef().... lvsNetlistSchematic is already set to t. Redefinition to nil
 is ignored.
-si: simSetDef().... correspondenceFile is already set to
-"/tmp/davidzGit/lvs_corr_file". Redefinition to nil is ignored.
+si: simSetDef().... correspondenceFile is already set to "lvs_corr_file".
+Redefinition to nil is ignored.
 si: simSetDef().... createXref is initialized to "nil".
 si: simSetDef().... disableLikeMatch is initialized to "nil".
 si: simSetDef().... disableRewire is initialized to "nil".
@@ -165,7 +172,7 @@ ignored.
 si: simSetDef().... lvsNetlistSchematic is already set to t. Redefinition to nil
 is ignored.
 si: simSetDef().... correspondenceFile is already set to
-"/tmp/davidzGit/lvs_corr_file". Redefinition to nil is ignored.
+"/tmp/david/lvs_corr_file". Redefinition to nil is ignored.
 si: simSetDef().... createXref is initialized to "nil".
 si: simSetDef().... disableLikeMatch is initialized to "nil".
 si: simSetDef().... disableRewire is initialized to "nil".
