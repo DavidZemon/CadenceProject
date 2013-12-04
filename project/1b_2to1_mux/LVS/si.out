@@ -1,0 +1,93 @@
+@(#)$CDS: LVS version 6.1.3 05/19/2010 00:58 (cic612lnx) $
+
+Command line: /usr/local/cadence/IC610/tools.lnx86/dfII/bin/32bit/LVS -dir /nethome/users/rcr2f/Desktop/CadenceProject/project/1b_2to1_mux/LVS -l -s -t /nethome/users/rcr2f/Desktop/CadenceProject/project/1b_2to1_mux/LVS/layout /nethome/users/rcr2f/Desktop/CadenceProject/project/1b_2to1_mux/LVS/schematic
+Like matching is enabled.
+Net swapping is enabled.
+Using terminal names as correspondence points.
+Compiling Diva LVS rules...
+
+    Net-list summary for /nethome/users/rcr2f/Desktop/CadenceProject/project/1b_2to1_mux/LVS/layout/netlist
+       count
+	7		nets
+	6		terminals
+	3		pmos
+	3		nmos
+
+    Net-list summary for /nethome/users/rcr2f/Desktop/CadenceProject/project/1b_2to1_mux/LVS/schematic/netlist
+       count
+	7		nets
+	6		terminals
+	3		pmos
+	3		nmos
+
+
+    Terminal correspondence points
+    N5        N2        A
+    N4        N3        B
+    N3        N6        F
+    N2        N5        S
+    N1        N0        gnd!
+    N6        N1        vdd!
+
+Devices in the netlist but not in the rules:
+        pcapacitor
+Devices in the rules but not in the netlist:
+        cap nfet pfet nmos4 pmos4
+
+The net-lists match.
+
+			     layout  schematic
+				instances
+	un-matched		0	0
+	rewired			0	0
+	size errors		0	0
+	pruned			0	0
+	active			6	6
+	total			6	6
+
+				  nets
+	un-matched		0	0
+	merged			0	0
+	pruned			0	0
+	active			7	7
+	total			7	7
+
+				terminals
+	un-matched		0	0
+	matched but
+	different type		0	0
+	total			6	6
+
+
+Probe files from /nethome/users/rcr2f/Desktop/CadenceProject/project/1b_2to1_mux/LVS/schematic
+
+devbad.out:
+
+netbad.out:
+
+mergenet.out:
+
+termbad.out:
+
+prunenet.out:
+
+prunedev.out:
+
+audit.out:
+
+
+Probe files from /nethome/users/rcr2f/Desktop/CadenceProject/project/1b_2to1_mux/LVS/layout
+
+devbad.out:
+
+netbad.out:
+
+mergenet.out:
+
+termbad.out:
+
+prunenet.out:
+
+prunedev.out:
+
+audit.out:
