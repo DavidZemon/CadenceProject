@@ -1,6 +1,6 @@
 \o Program:		@(#)$CDS: libManager.exe version 6.1.3_ISR 11/30/2009 15:29 (cat71lnx) $
 \o Sub version:		sub-version 07.02-s047
-\o Arguments:		-mpssession virtuoso10445 -mpshost rc28xece107 
+\o Arguments:		-mpssession virtuoso13831 -mpshost rc28xece107 
 \o Working Directory:	rc28xece107:/tmp/david
 \o Qt version: 		4.2.3
 \o Log file is "/tmp/david/libManager.log".
@@ -14,10 +14,61 @@
 \o Library Manager customization server connected.
 \a cdsLibManager->libListBox->value = "project"
 \a cdsLibManager->libLineEdit->value = "project"
-\a cdsLibManager->cellListBox->value = "xnor"
-\a cdsLibManager->cellLineEdit->value = "xnor"
-\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->cellListBox->value = "4bit_xor"
+\a cdsLibManager->cellLineEdit->value = "4bit_xor"
 \a cdsLibManager->viewListBox->value = "extracted"
+\a cdsLibManager->viewListBox->value = "LVS"
+\a lmgrLogShowPopup("mainListPopup2" 16 11 2 "LVS")
+\a cdsLibManager->editDeleteButton->value = t
+\a deleteForm->deleteBothRadioButton->value = t
+\a deleteForm->deleteFilterEdit->value = "*"
+\a deleteForm->notDeleteFilterEdit->value = "*"
+\a nrSetWindowVisibility(deleteForm "show")
+\a cdsLibManager->viewLineEdit->value = "LVS"
+\a nrSetCurrentWindow(deleteForm)
+\a nrResizeWindow(deleteForm list(-9 82 627 425))
+\a deleteForm->notDeleteListBox->value = '("extracted" )
+\a deleteForm->moveToDeleteButton->value = t
+\a deleteForm->notDeleteListBox->value = '()
+\a deleteForm->deleteListBox->value = '("extracted" )
+\a nrSetCurrentWindow(deleteForm)
+\a nrSetCurrentWindow(deleteForm)
+\a nrSetCurrentWindow(deleteForm)
+\a deleteForm->notDeleteListBox->value = '("layout_pinless" )
+\a deleteForm->moveToDeleteButton->value = t
+\a deleteForm->notDeleteListBox->value = '()
+\a deleteForm->deleteListBox->value = '("extracted" "layout_pinless" )
+\a deleteForm->OK->value = t
+\o QUESTION (CLM-199): The following 3 items are marked for deletion.  Are you sure?
+\a nrSetWindowVisibility(mcMBXDLG "show")
+\a nrSetCurrentWindow(mcMBXDLG)
+\a nrResizeWindow(mcMBXDLG list(0 0 405 361))
+\a mcMBXDLG->pushButton1->value = t
+\o Deleting 3 views from cell "4bit_xor" in library "project".
+\a nrSetWindowVisibility(workingDialogForm "show")
+\o Deleting view "LVS".
+\a nrSetCurrentWindow(deleteForm)
+\a nrSetCurrentWindow(cdsLibManager)
+\o Deleted cellview 'project/4bit_xor/LVS'.
+\o Deleting view "extracted".
+\a nrSetCurrentWindow(workingDialogForm)
+\o Deleted cellview 'project/4bit_xor/extracted'.
+\o Deleting view "layout_pinless".
+\o Deleted cellview 'project/4bit_xor/layout_pinless'.
+\o Deletion of 3 views done.
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "project"
+\a cdsLibManager->libLineEdit->value = "project"
+\a cdsLibManager->cellListBox->value = "4bit_xor"
+\a cdsLibManager->cellLineEdit->value = "4bit_xor"
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(workingDialogForm list(151 201 298 134))
+\a cdsLibManager->viewListBox->value = "layout"
 \a nrListItemAction(cdsLibManager->viewListBox 0 0)
 \o MPS request: edit design
 \a cdsLibManager->libListBox->value = nil
@@ -27,12 +78,18 @@
 \a cdsLibManager->libLineEdit->value = ""
 \a cdsLibManager->libListBox->value = "project"
 \a cdsLibManager->libLineEdit->value = "project"
-\a cdsLibManager->cellListBox->value = "xnor"
-\a cdsLibManager->cellLineEdit->value = "xnor"
-\a cdsLibManager->viewListBox->value = "extracted"
+\a cdsLibManager->cellListBox->value = "4bit_xor"
+\a cdsLibManager->cellLineEdit->value = "4bit_xor"
+\a cdsLibManager->viewListBox->value = "layout"
 \a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a nrSetCurrentWindow(cdsLibManager)
 \a cdsLibManager->viewListBox->value = "extracted"
+\a nrListItemAction(cdsLibManager->viewListBox 0 0)
+\o MPS request: edit design
 \a cdsLibManager->viewLineEdit->value = "extracted"
+\a nrSetCurrentWindow(cdsLibManager)
 \o MPS service: shutdown
 \o libManager is exiting.
 \a nrSetWindowVisibility(cdsLibManager "hide")
