@@ -1,0 +1,12 @@
+simulator lang=spectre
+//
+// Variables
+parameters VCC = 1.8
+parameters STEP = 10u
+parameters T_RF = 10p
+//
+vdd (vdd! 0) vsource dc=VCC
+//
+// Other stuff
+a0 (A 0) vsource type=pulse val0=VCC val1=0 delay=0 rise=T_RF fall=T_RF width=STEP period=2*STEP
+b0 (B 0) vsource type=pulse val0=VCC val1=0 delay=0 rise=T_RF fall=T_RF width=2*STEP period=4*STEP

@@ -9,7 +9,7 @@ Compiling Diva LVS rules...
     Net-list summary for /tmp/david/project/xnor/LVS/layout/netlist
        count
 	7		nets
-	0		terminals
+	5		terminals
 	4		pmos
 	4		nmos
 
@@ -19,6 +19,14 @@ Compiling Diva LVS rules...
 	5		terminals
 	4		pmos
 	4		nmos
+
+
+    Terminal correspondence points
+    N5        N4        A
+    N4        N2        B
+    N3        N3        F
+    N2        N0        gnd!
+    N6        N1        vdd!
 
 Devices in the netlist but not in the rules:
         pcapacitor
@@ -46,8 +54,8 @@ The net-lists match.
 				terminals
 	un-matched		0	0
 	matched but
-	different type		0	0
-	total			0	5
+	different type		2	2
+	total			5	5
 
 
 Probe files from /tmp/david/project/xnor/LVS/schematic
@@ -59,6 +67,8 @@ netbad.out:
 mergenet.out:
 
 termbad.out:
+? Terminal A's type in the schematic: input, in the layout: inputOutput
+? Terminal B's type in the schematic: input, in the layout: inputOutput
 
 prunenet.out:
 
@@ -76,6 +86,8 @@ netbad.out:
 mergenet.out:
 
 termbad.out:
+? Terminal A's type in the layout: inputOutput, in the schematic: input
+? Terminal B's type in the layout: inputOutput, in the schematic: input
 
 prunenet.out:
 

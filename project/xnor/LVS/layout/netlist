@@ -1,19 +1,24 @@
+t 5 A inputOutput
+t 4 B inputOutput
+t 3 F output
+t 2 gnd! jumper
+t 6 vdd! inputOutput
 n 0 /7
 n 1 /6
-n 2 /5
-n 3 /4
-n 4 /3
-n 5 /2
-n 6 /1
+n 2 /gnd!
+n 3 /F
+n 4 /B
+n 5 /A
+n 6 /vdd!
 ; pmos4 Instance /+7 = auLvs device Q0
 d pmos D G S B (p D S)
-i 0 pmos 1 3 6 6 " m 1 l 180e-9 w 450e-9 "
+i 0 pmos 3 0 6 6 " m 1 l 180e-9 w 450e-9 "
 ; pmos4 Instance /+6 = auLvs device Q1
-i 1 pmos 2 0 3 6 " m 1 l 180e-9 w 450e-9 "
+i 1 pmos 4 5 0 6 " m 1 l 180e-9 w 450e-9 "
 ; pmos4 Instance /+5 = auLvs device Q2
-i 2 pmos 3 2 0 6 " m 1 l 180e-9 w 450e-9 "
+i 2 pmos 0 4 5 6 " m 1 l 180e-9 w 450e-9 "
 ; pmos4 Instance /+4 = auLvs device Q3
-i 3 pmos 4 0 6 6 " m 1 l 180e-9 w 450e-9 "
+i 3 pmos 1 5 6 6 " m 1 l 180e-9 w 450e-9 "
 ; pcapacitor Instance /+30 = auLvs device C4
 d pcapacitor PLUS MINUS (p PLUS MINUS)
 ; pcapacitor Instance /+29 = auLvs device C5
@@ -40,10 +45,10 @@ d pcapacitor PLUS MINUS (p PLUS MINUS)
 ; pcapacitor Instance /+8 = auLvs device C26
 ; nmos4 Instance /+3 = auLvs device Q27
 d nmos D G S B (p D S)
-i 27 nmos 1 3 5 5 " m 1 l 180e-9 w 270e-9 "
+i 27 nmos 3 0 2 2 " m 1 l 180e-9 w 270e-9 "
 ; nmos4 Instance /+2 = auLvs device Q28
-i 28 nmos 2 4 3 5 " m 1 l 180e-9 w 450e-9 "
+i 28 nmos 4 1 0 2 " m 1 l 180e-9 w 450e-9 "
 ; nmos4 Instance /+1 = auLvs device Q29
-i 29 nmos 3 2 4 5 " m 1 l 180e-9 w 450e-9 "
+i 29 nmos 0 4 1 2 " m 1 l 180e-9 w 450e-9 "
 ; nmos4 Instance /+0 = auLvs device Q30
-i 30 nmos 4 0 5 5 " m 1 l 180e-9 w 450e-9 "
+i 30 nmos 1 5 2 2 " m 1 l 180e-9 w 450e-9 "
