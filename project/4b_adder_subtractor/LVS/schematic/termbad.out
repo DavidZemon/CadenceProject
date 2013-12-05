@@ -1,0 +1,20 @@
+? Terminal A<0>'s type in the schematic: input, in the layout: inputOutput
+? Terminal A<1>'s type in the schematic: input, in the layout: inputOutput
+? Terminal A<2>'s type in the schematic: input, in the layout: inputOutput
+? Terminal A<3>'s type in the schematic: input, in the layout: inputOutput
+? Terminal B<0>'s type in the schematic: input, in the layout: inputOutput
+? Terminal B<1>'s type in the schematic: input, in the layout: inputOutput
+? Terminal B<2>'s type in the schematic: input, in the layout: inputOutput
+? Terminal B<3>'s type in the schematic: input, in the layout: inputOutput
+? Terminal Ci's type in the schematic: input, in the layout: inputOutput
+? Terminal Co's type in the schematic: output, in the layout: inputOutput
+? Terminal S<0>'s type in the schematic: output, in the layout: inputOutput
+? Terminal S<1>'s type in the schematic: output, in the layout: inputOutput
+? Terminal S<2>'s type in the schematic: output, in the layout: inputOutput
+? Terminal S<3>'s type in the schematic: output, in the layout: inputOutput
+? Terminal V's type in the schematic: output, in the layout: inputOutput
+T -1  gnd! /gnd!
+? Terminal gnd! in the schematic failed to match any terminal in the layout.
+? Terminal op's type in the schematic: input, in the layout: inputOutput
+T -1  vdd! /vdd!
+? Terminal vdd! in the schematic failed to match any terminal in the layout.
