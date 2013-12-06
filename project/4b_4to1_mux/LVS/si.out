@@ -24,20 +24,20 @@ Compiling Diva LVS rules...
     Terminal correspondence points
     N31       N21       A<0>
     N27       N17       A<1>
-    N25       N13       A<2>
+    N24       N13       A<2>
     N20       N9        A<3>
     N42       N20       B<0>
     N38       N16       B<1>
-    N37       N12       B<2>
+    N36       N12       B<2>
     N35       N8        B<3>
     N34       N19       C<0>
     N30       N15       C<1>
     N28       N11       C<2>
-    N24       N7        C<3>
+    N25       N7        C<3>
     N21       N18       D<0>
     N41       N14       D<1>
     N39       N10       D<2>
-    N36       N6        D<3>
+    N37       N6        D<3>
     N26       N5        F<0>
     N22       N4        F<1>
     N43       N3        F<2>
@@ -47,6 +47,8 @@ Compiling Diva LVS rules...
     N23       N0        gnd!
     N32       N1        vdd!
 
+Devices in the netlist but not in the rules:
+        pcapacitor
 Devices in the rules but not in the netlist:
         cap nfet pfet nmos4 pmos4
 
