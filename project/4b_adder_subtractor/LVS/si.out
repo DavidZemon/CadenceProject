@@ -8,7 +8,7 @@ Compiling Diva LVS rules...
 
     Net-list summary for /tmp/david/project/4b_adder_subtractor/LVS/layout/netlist
        count
-	76		nets
+	77		nets
 	18		terminals
 	78		pmos
 	78		nmos
@@ -22,99 +22,64 @@ Compiling Diva LVS rules...
 
 
     Terminal correspondence points
-    N69       N7        A<0>
-    N66       N6        A<1>
-    N61       N8        A<2>
-    N58       N9        A<3>
-    N75       N10       B<0>
-    N74       N11       B<1>
-    N73       N12       B<2>
-    N72       N13       B<3>
-    N68       N5        Ci
-    N65       N4        Co
-    N71       N14       S<0>
-    N67       N15       S<1>
-    N63       N16       S<2>
-    N60       N17       S<3>
-    N64       N3        V
-    N59       N0        gnd!
-    N62       N21       op
-    N70       N1        vdd!
+    N70       N7        A<0>
+    N67       N6        A<1>
+    N62       N8        A<2>
+    N59       N9        A<3>
+    N76       N10       B<0>
+    N75       N11       B<1>
+    N74       N12       B<2>
+    N73       N13       B<3>
+    N69       N5        Ci
+    N66       N4        Co
+    N72       N14       S<0>
+    N68       N15       S<1>
+    N64       N16       S<2>
+    N61       N17       S<3>
+    N65       N3        V
+    N60       N0        gnd!
+    N63       N21       op
+    N71       N1        vdd!
 
 Devices in the netlist but not in the rules:
         pcapacitor
 Devices in the rules but not in the netlist:
         cap nfet pfet nmos4 pmos4
 
-    Ill-defined correspondence points.
-
-	N72	N13  Accepted because one is a subset of the other
-	N75	N10  Accepted because one is a subset of the other
-	N62	N21  Accepted because one is a subset of the other
-	N74	N11  Accepted because one is a subset of the other
-	N70	N1  Accepted because one is a subset of the other
-	N70	N1  Accepted because one is a subset of the other
-	N73	N12  Accepted because one is a subset of the other
-
-
-	Device summary for layout
-		   bad  total
-	nmos	     2     78
-
-
-	Device summary for schematic
-		   bad  total
-	nmos	     2     78
-
-The net-lists failed to match.
+The net-lists match.
 
 			     layout  schematic
 				instances
-	un-matched		2	2
-	rewired			15	0
+	un-matched		0	0
+	rewired			0	0
 	size errors		0	0
 	pruned			0	0
 	active			156	156
 	total			156	156
 
 				  nets
-	un-matched		3	4
+	un-matched		0	0
 	merged			0	0
 	pruned			0	0
-	active			76	77
-	total			76	77
+	active			77	77
+	total			77	77
 
 				terminals
-	un-matched		2	2
+	un-matched		0	0
 	matched but
-	different type		16	16
+	different type		0	0
 	total			18	18
 
 
 Probe files from /tmp/david/project/4b_adder_subtractor/LVS/schematic
 
 devbad.out:
-I /I9/I2/M0
-? Device does not cross-match.
-I /I8/M1
-? Device does not cross-match.
 
 netbad.out:
-N /net76
-? Net does not cross-match. It has 8 connections.
-N /vdd!
-? Net does not cross-match. It has 105 connections.
-N /gnd!
-? Net does not cross-match. It has 105 connections.
-N /net66
-? Net does not cross-match. It has 10 connections.
 
 mergenet.out:
 
 termbad.out:
-The no. of lines exceeded than specified by the variable lvsLimitLinesInOutFile.
-To see the complete information please see the file:
-/tmp/david/project/4b_adder_subtractor/LVS/schematic/termbad.out
 
 prunenet.out:
 
@@ -126,25 +91,12 @@ audit.out:
 Probe files from /tmp/david/project/4b_adder_subtractor/LVS/layout
 
 devbad.out:
-I /+60
-? Device does not cross-match.
-I /+2
-? Device does not cross-match.
 
 netbad.out:
-N /vdd!
-? Net does not cross-match. It has 113 connections.
-N /gnd!
-? Net does not cross-match. It has 106 connections.
-N /25
-? Net does not cross-match. It has 9 connections.
 
 mergenet.out:
 
 termbad.out:
-The no. of lines exceeded than specified by the variable lvsLimitLinesInOutFile.
-To see the complete information please see the file:
-/tmp/david/project/4b_adder_subtractor/LVS/layout/termbad.out
 
 prunenet.out:
 
