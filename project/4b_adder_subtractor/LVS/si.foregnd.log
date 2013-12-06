@@ -99,7 +99,7 @@ ignored.
 si: simSetDef().... lvsNetlistSchematic is already set to t. Redefinition to nil
 is ignored.
 si: simSetDef().... correspondenceFile is already set to
-"/tmp/david/lvs_corr_file". Redefinition to nil is ignored.
+"/tmp/CadenceProject/lvs_corr_file". Redefinition to nil is ignored.
 si: simSetDef().... createXref is initialized to "nil".
 si: simSetDef().... disableLikeMatch is initialized to "nil".
 si: simSetDef().... disableRewire is initialized to "nil".
@@ -143,7 +143,7 @@ ignored.
 si: simSetDef().... lvsNetlistSchematic is already set to t. Redefinition to nil
 is ignored.
 si: simSetDef().... correspondenceFile is already set to
-"/tmp/david/lvs_corr_file". Redefinition to nil is ignored.
+"/tmp/CadenceProject/lvs_corr_file". Redefinition to nil is ignored.
 si: simSetDef().... createXref is initialized to "nil".
 si: simSetDef().... disableLikeMatch is initialized to "nil".
 si: simSetDef().... disableRewire is initialized to "nil".
@@ -165,7 +165,7 @@ ignored.
 si: simSetDef().... lvsNetlistSchematic is already set to t. Redefinition to nil
 is ignored.
 si: simSetDef().... correspondenceFile is already set to
-"/tmp/david/lvs_corr_file". Redefinition to nil is ignored.
+"/tmp/CadenceProject/lvs_corr_file". Redefinition to nil is ignored.
 si: simSetDef().... createXref is initialized to "nil".
 si: simSetDef().... disableLikeMatch is initialized to "nil".
 si: simSetDef().... disableRewire is initialized to "nil".
