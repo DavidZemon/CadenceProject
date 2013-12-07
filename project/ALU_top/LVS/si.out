@@ -1,0 +1,106 @@
+@(#)$CDS: LVS version 6.1.3 05/19/2010 00:58 (cic612lnx) $
+
+Command line: /usr/local/cadence/IC610/tools.lnx86/dfII/bin/32bit/LVS -dir /tmp/david/project/ALU_top/LVS -l -s -t /tmp/david/project/ALU_top/LVS/layout /tmp/david/project/ALU_top/LVS/schematic
+Like matching is enabled.
+Net swapping is enabled.
+Using terminal names as correspondence points.
+Compiling Diva LVS rules...
+
+    Net-list summary for /tmp/david/project/ALU_top/LVS/layout/netlist
+       count
+	108		nets
+	19		terminals
+	116		pmos
+	116		nmos
+
+    Net-list summary for /tmp/david/project/ALU_top/LVS/schematic/netlist
+       count
+	108		nets
+	19		terminals
+	116		pmos
+	116		nmos
+
+
+    Terminal correspondence points
+    N100      N25       A<0>
+    N98       N16       A<1>
+    N93       N4        A<2>
+    N89       N2        A<3>
+    N106      N5        B<0>
+    N104      N29       B<1>
+    N103      N28       B<2>
+    N102      N30       B<3>
+    N99       N31       Ci
+    N97       N27       Co
+    N95       N8        F<0>
+    N91       N10       F<1>
+    N107      N9        F<2>
+    N105      N7        F<3>
+    N94       N12       Op<0>
+    N90       N11       Op<1>
+    N96       N6        V
+    N92       N0        gnd!
+    N101      N1        vdd!
+
+Devices in the netlist but not in the rules:
+        pcapacitor
+Devices in the rules but not in the netlist:
+        cap nfet pfet nmos4 pmos4
+
+The net-lists match.
+
+			     layout  schematic
+				instances
+	un-matched		0	0
+	rewired			0	0
+	size errors		0	0
+	pruned			0	0
+	active			232	232
+	total			232	232
+
+				  nets
+	un-matched		0	0
+	merged			0	0
+	pruned			0	0
+	active			108	108
+	total			108	108
+
+				terminals
+	un-matched		0	0
+	matched but
+	different type		0	0
+	total			19	19
+
+
+Probe files from /tmp/david/project/ALU_top/LVS/schematic
+
+devbad.out:
+
+netbad.out:
+
+mergenet.out:
+
+termbad.out:
+
+prunenet.out:
+
+prunedev.out:
+
+audit.out:
+
+
+Probe files from /tmp/david/project/ALU_top/LVS/layout
+
+devbad.out:
+
+netbad.out:
+
+mergenet.out:
+
+termbad.out:
+
+prunenet.out:
+
+prunedev.out:
+
+audit.out:
